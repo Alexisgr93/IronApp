@@ -59,11 +59,9 @@ header{
 	outline:none;
 	white-space:normal;
 	border-bottom: 1px solid #000;
-	
 }
 .w3-bar-block .w3-bar-item2{/*linea de boton cerrar corregida*/
-	margin-top:1%;
-	position:relative;
+	position:absolute;
 	width:100%;
 	display:block;
 	padding:3% 12%;
@@ -72,7 +70,6 @@ header{
 	outline:none;
 	white-space:normal;
 	border-bottom: 1px solid #000;
-	border-top: 1px solid #000;
 }
 
 .w3-overlay{/*REVISAR*/
@@ -108,10 +105,20 @@ header{
 
 
 
-.w3-large{
+.w3-medium{/*REVISAR*/
+	font-size:15px!important
+	}.w3-large{
 		font-size:18px!important
 }
-
+.w3-xlarge{/*REVISAR*/
+	font-size:24px!important
+	}.w3-xxlarge{
+		font-size:36px!important
+		}.w3-xxxlarge{
+			font-size:48px!important
+			}.w3-jumbo{
+				font-size:64px!important
+}
 
 .w3-buttn:hover{/*sidebar*/
 	color:#000!important;/*color del texto al ser sombreado*/
@@ -130,9 +137,6 @@ header{
 	margin-top:10%;
 	text-decoration:none;
 }
-#letes{
-	height:60%;	
-	}
 .slider{
 	/*background que va a ocupar tambien se puede definir "background-image:url(../backround/backround.jpg;"*/
 	width: 50%;
@@ -146,7 +150,16 @@ header{
 	text-decoration:none;
 	}
 
-
+#scroll-sidebar{/*scroll del sidebar*/
+	width: 100%;
+	height: 75%;
+	overflow-y: scroll;
+	position: absolute;
+	top: 25%;
+	margin: 0%;
+	padding: 0%;
+	text-decoration:none;
+}
 
 
 
@@ -210,7 +223,6 @@ header{
 }
 .w3-buttn{
 	position:absolute;
-	margin-top:0%;
 	border:none;
 	display:inline-block;
 	outline:0;
@@ -298,7 +310,7 @@ section{
 }
 
 #scroll-menu {
-	width: 100%;
+	width: 98%;
 	height: 97%;
 	overflow-y: scroll;
 	position: absolute;
@@ -340,19 +352,12 @@ footer{
 	font-size:24px!important
 	}
 	
-
-
-.social{
 	
-
-	
-	height:100%;
+#social{
+	position:absolute;
+	margin-top:35%;
 	margin-left:center;
 	text-decoration:none;
-	
-	color: #fff;
-	font-size: 14px;
-	margin-left:5%;
 	
 	}	
 	
@@ -411,7 +416,11 @@ a{
 
 
 
-
+.copyright{
+	color: #fff;
+	font-size: 14px;
+	margin-left:5%;
+}
 
 
 #caja{
@@ -521,6 +530,7 @@ button{
 
 .inferior{
 	height:80%;
+	width:100%;
 	position:relative;
 	}
 
@@ -528,7 +538,7 @@ button{
 	text-align: center;
 	position: absolute;
 	margin-top: 0%;
-	left: 16px;
+	margin-left:0%;
 	width: 100%;
 	}
 
