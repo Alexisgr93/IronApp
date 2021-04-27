@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>W3.CSS</title>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../estilo/index.css">
+    <link rel="stylesheet" href="../../../estilo/acciones-css/estilo-body.css">
+    <link rel="stylesheet" href="../../../estilo/tabla.css">
+   
+   <script src="../../../js/index.js"></script>
+</head>
+
+		<header>
+                <!--background del header-->
+        			<!-- Page Content -->
+		
+  				
+        <img id="hamburguesa" src="../../../logo/menu1.png" onclick="w3_open()"></img>
+                <!-- Sidebar -->
+        <div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
+        </div>
+        
+        <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+            	
+        	<img id="alexis-sidebar" src="../../../logo/LOGOb.png"></img>
+                   	
+                 <div id="letes">
+                    <div class="scroll-menu-desplegable">
+                        
+                                          
+                        <a href="../seleccion/Torneado.html"  class="w3-buttn">
+                            Torneado
+                        </a>
+                        <a href="../seleccion/fresado.html" class="w3-buttn">
+                            Fresado
+                        </a>
+                        <a href="../seleccion/taladrado.html" class="w3-buttn">
+                            Taladrado
+                        </a>
+                        <a href="../seleccion/roscado.html" class="w3-buttn">
+                            Roscado
+                        </a>
+                        <a class="w3-buttn">
+                            Ajuste
+                        </a>
+                        <a  class="w3-buttn">
+                            Ayuda
+                        </a>
+                        <a onClick="w3_close()" class=" w3-buttn cerrar-menu">
+                        	Cerrar menu
+                        </a>
+                     
+                    </div>  
+                 </div>        
+                 
+                 <!-- redes sociales -->
+                 <div id="social">
+                                        
+                 	
+                    	<img class="facebook" onClick="face" src="../../../backround/f.png"></img>
+                 	
+                                    
+                    
+                    	<img  class="linkedin"  src="../../../backround/in.png"></img>
+                    
+                                    
+                    
+                    	<img  class="twitter" src= "../../../backround/t.png"></img>
+                    
+                                    <!--Fin redes sociales -->
+                      Copyright © All Rights Reserved.
+                                       
+                 </div>	
+                                        
+            
+        	</div> 
+            <a href="index.html">                   
+            	<img id="frases" src="../../../logo/Nombre-IronApp.png"></img>
+            </a>
+            <a href="index.html">
+                <img id="casa" src="../../../img/imagenes/casa1.png"></img>
+            </a>    
+		</header>
+		
+
+
+</head>
+<body>
+
+
+
+<section>
+
+	<div class="backgroung">
+    	<div class="superior">
+        
+        	fresado
+        </div>
+        
+    	<div class="inferior">
+        	<div id="scroll-tabla">
+            	<table class="tabla" width="90%" border="1px" bordercolor="#333333">
+                      <tr>
+                        <td>Diametro<br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        Dc | mm
+                        </td>
+                        <td>Velocidad de corte<br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        Vc | m/min
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>RPM<br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        n | RPM
+                        </td>
+                        <td>Numero de dientes<br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        Z
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Profundidad de corte axial<br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        ap | mm
+                        </td>
+                        <td>Ancho de corte<br><br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        ae | mm
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Angulo de entrada<br><br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        k | º
+                        </td>
+                        <td>Avance por diente<br><br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        fz | mm
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Avance por revolucion<br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        fn | mm/rev
+                        </td>
+                        <td>Velocidad de avance lineal<br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        vf | mm/min
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Longitud de corte<br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        lm | mm
+                        </td>
+                        <td>Saliente<br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        U | mm 
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Angulo de desprendimiento<br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        y | º
+                        </td>
+                        <td>Rendimiento<br><br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        n | % 
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Factor de desgaste<br><br>
+                        <input type="text" size="15" maxlength="30" name="nombre"><br>
+                        %
+                        </td>
+                        <td>Formula para el calculo (Fx)<br>
+                        <button> n</button><br>
+                        Fx<br> 
+                        </td>
+                      </tr>
+				</table>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+		</div>
+
+
+
+
+        <div>
+    </div>
+</section>
+   <footer>
+    	<img id="alexis" src="../../../logo/LOGOb.png"></img>
+   </footer>
+</body>
+</html>

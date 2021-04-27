@@ -1,0 +1,39 @@
+
+
+
+#torneado, #escuadrado, #fresa, #asimetrico, #torneado-torneado{
+	width: 90%;
+	height: 15%;
+	left:5%;
+	top: 8%;
+	position: absolute;
+	cursor: pointer;
+	text-decoration:none;
+}
+#fresado, #planeado, #laminacion, #simetrico, #ranurado-torneado{
+	width: 90%;
+	height: 15%;
+	right:5%;
+	top: 31%;
+	position: absolute;
+	cursor: pointer;
+	text-decoration:none;
+}
+#taladrado, #ranurado, #macho, #mandrinado{
+	width: 90%;
+	height: 15%;
+	right:5%;
+	top: 54%;
+	position: absolute;
+	cursor: pointer;
+	text-decoration:none;
+}
+#roscado{
+	width: 90%;
+	height: 15%;
+	right:5%;
+	top: 77%;
+	position: absolute;
+	cursor: pointer;
+	text-decoration:none;
+}

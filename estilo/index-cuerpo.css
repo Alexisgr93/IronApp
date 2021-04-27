@@ -1,0 +1,30 @@
+
+	
+.ingresar {
+	position:relative;
+	margin-top:45%;
+	margin-left:45%;
+	border-radius:15%;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    
+    text-decoration: none;
+
+    font-size: 16px;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+.ingresar:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+
+
+

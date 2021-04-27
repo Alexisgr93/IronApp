@@ -1,0 +1,377 @@
+/*Definicion de la estructura*/
+
+html{
+	/*definir el tamaño del html total*/
+	width: 100%;
+	height: 100%;
+	/*color de fuente*/
+	color: black;
+	/*reconocimiento de letra*/
+	font-family: arial, sans serif;
+	/*tamaño de letra*/
+	font-size: 20px;
+	/*background-image: url(../backround/background-logo.jpg);*/
+	top: 100%;
+	line-height:1.5;
+	background-color:rgba(102,102,102,1);
+}
+
+header{
+	/*tamaño que va a ocupar el header o banner con el logo*/
+	width: 100%;
+	height: 15%;
+	background-color:rgba(102,102,102,1);
+	
+}
+
+body{
+	/*margen de borde del cuerpo*/
+	margin:0px;
+	width:100%;
+	height:100%;
+}
+
+section{
+	position:relative;
+	width: 100%;
+	height: 75%;
+	background-color:rgb(0,0,0);
+	display:block;
+}
+
+footer{
+	width: 100%;
+	height: 9.9%;
+	background-color:rgba(102,102,102,1);
+}
+
+
+
+
+
+
+
+
+/*Definimos el menu desplegable de la hamburguesa*/
+
+#hamburguesa{
+	/*tamaño del logo ancho y largo*/
+	width: 10%;
+	/* [disabled]height: 10%; */
+	/*centrar manualmente de izquierda lo muevo hacia la derecha*/
+	left: 5%;
+	/*centrar manualmente de arriba hacia abajo*/
+	top: 4%;
+	position: absolute;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+
+
+
+
+/*w3-sidebar es el menu desplegable (el desplazamiento)*/
+.w3-sidebar{
+	display:block;
+	height:100%; 
+	margin-top:0%;
+	width:70%;
+	background-color: rgba(51,51,51,1);
+	background-repeat: repeat;
+	position:fixed!important;
+	z-index:1;
+	color:#FFF;/*color del texto*/
+	text-decoration:none;
+
+}
+
+.w3-bar-block .w3-bar-item{/*REVISAR*/
+	position:relative;
+	padding:0% 12%;
+	text-align:left;
+	outline:none;
+	white-space:normal;
+	
+	
+}
+a{
+	text-decoration:none;
+	padding-left:10%;
+	font-size:18px;
+	padding-top:2%;
+	padding-bottom:2%;
+	border-bottom: 1px olid #000;
+
+	}
+.w3-buttn{
+	border-top: 1px solid #000;
+	
+	width:90%;
+	margin-top:0%;
+	display:block;
+	outline:0;
+	vertical-align:middle;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+	text-align:left;
+	cursor:pointer;
+	white-space:nowrap;
+	
+	}
+	
+.w3-buttn:hover{/*sidebar*/
+	color:#000!important;/*color del texto al ser sombreado*/
+	background-color:#4ABCDD!important;/*sombreado celeste*/
+	border-left: 4px solid #0F3;/*barra verde lateral*/
+	font-size: 20px;/*agranda la letra al pasar el mouse*/
+
+}
+
+.cerrar-menu{
+	border-bottom: 1px solid #000;
+	padding-bottom:2%;
+	
+	}
+
+
+
+
+
+
+
+.w3-overlay{/*REVISAR*/
+	position:fixed;
+	display:none;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:rgba(0,0,0,0.5);
+	z-index:2;
+	
+}
+
+.w3-animate-left{/*REVISAR*/
+	position:relative;
+	animation:animateleft 1.5s;
+	-webkit-transition:left 1.5s;
+	-moz-transition:left 1.5s;
+	-o-transition:left 1.5s;
+	-ms-transition:left 1.5s;
+}
+@keyframes animateleft{/*REVISAR*/
+	from{
+	left:-300px;
+	opacity:0
+	} 
+	to{left:0;
+	opacity:1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*se define las posiciones dentro del sidebar*/
+#alexis-sidebar{
+	
+	width: 90%;
+	height: 15%;
+	margin-left:5%;
+	margin-top:10%;
+	text-decoration:none;
+}
+
+#letes{
+	height:60%;	
+	
+}
+
+#social{
+	
+	text-decoration:none;
+	font-size: 14px;
+	margin-left:5%;
+}	
+	
+	
+	
+	
+	
+.scroll-menu-desplegable {
+	width: 100%;
+	height: 50%;
+	overflow-y: scroll;
+	position: absolute;
+	top: 25%;
+	margin: 0%;
+	padding: 0%;
+}
+
+
+
+	
+	
+
+
+#backgroung-logo{
+	background-color:rgb(103,0,0);
+	width: 100%;
+	height: 100%;
+}
+
+
+#frases{
+	/*tamaño del logo ancho y largo*/
+	width: 50%;
+	height: 10%;
+	/*centrar manualmente de izquierda lo muevo hacia la derecha*/
+	left: 25%;
+	/*centrar manualmente de arriba hacia abajo*/
+	top: 2.5%;
+	position: absolute;
+	cursor: pointer;
+	text-decoration:none;
+}
+
+
+
+#casa{
+	/*tamaño del logo ancho y largo*/
+	width: 9%;
+	height: 7%;
+	/*centrar manualmente de izquierda lo muevo hacia la derecha*/
+	right:5%;
+	
+	/*centrar manualmente de arriba hacia abajo*/
+	top: 4%;
+	position: absolute;
+	cursor: pointer;
+	text-decoration:none;
+}
+
+
+
+
+	
+.backgroung{
+	/*ocupa el tamaño total del seccion*/
+	display:table;
+	width:100%;
+	height:100%;
+	background-color:#F7F7F7;
+	/*background-color:rgba(244,244,244);*/
+}
+
+
+
+
+
+#alexis{
+	position:relative;
+	/*background que va a ocupar tambien se puede definir "background-image:url(../backround/backround.jpg;"*/
+	width: 50%;
+	height: 90%;
+	margin-left:25%;
+	margin-top:0.7%;
+}
+
+
+
+	
+
+
+	
+	
+/*se define la caja circular de face, link, twit*/	
+.facebook{
+	margin-left:5%;
+	width:25%;
+	height:10%;
+	border: 2px solid #fff;
+	border-radius:100%;
+	text-decoration:none;
+	}
+	
+	.facebook:hover{
+	background: #3F5C9A;
+	border: 2px solid #3F5C9A;
+	border-radius:100%;
+	text-decoration:none;
+}	
+
+
+.linkedin{
+	width:25%;
+	height:10%;
+	border: 2px solid #fff;
+	border-radius:100%;
+	text-decoration:none;
+	
+	}
+	
+	.linkedin:hover{
+	background: #37678D;
+	border: 2px solid #37678D;
+	border-radius:100%;
+	text-decoration:none;
+
+}	
+	
+	
+.twitter{
+	width:25%;
+	height:10%;
+	border: 2px solid #fff;
+	border-radius:100%;
+	text-decoration:none;
+	}	
+
+	.twitter:hover{
+	background: #54A4DE;
+	border: 2px solid #54A4DE;
+	border-radius:100%;
+	text-decoration:none;
+}
+
+
+
+
+
+
+
+
+	
+	
+
+
+	
+
+
+
+a {
+    cursor: pointer;
+	text-decoration:none;
+}
+
+
+
+
+	
+
