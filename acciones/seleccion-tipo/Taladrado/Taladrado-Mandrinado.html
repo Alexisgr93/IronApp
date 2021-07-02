@@ -5,64 +5,84 @@
     <meta charset="UTF8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../../estilo/index.css">
+    <link rel="stylesheet" href="../../../estilo/acciones-css/estilo-body.css">
+    <link rel="stylesheet" href="../../../estilo/tabla.css">
    
-    <script src="../../../js/index.js"></script>
+   <script src="../../../js/index.js"></script>
 </head>
-	<body>
+
 		<header>
                 <!--background del header-->
-                
-        	<a href="../../../index.html">                   
-                        <!--logo de engranaje con petroleo-->
-                      <!--  <img id="logo" src="logo/logo.png"></img>
-                        <!--Imagen de metalfer-->
-            	<img id="frases" src="../../../logo/ahorcado.png"></img>
-            </a>
         			<!-- Page Content -->
-				<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
-  					<img class="w3-button w3-white w3-xxlarge" id="hamburguesa" src="../../../logo/menu.png" onclick="w3_open()">
-                    <!-- Sidebar -->
-                		<div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
-                			<img id="alexis-sidebar" src="../../../logo/LOGOb.png"></img>
-                   		
-                        		<div class="scroll" id="scroll-sidebar">
-                      		  		<button class="w3-bar-item w3-buttn w3-large" onclick="w3_close()">CERRAR X</button>
-                                
-								
-								
-							 		  		
-                              		  <a href="torneado.html" class="w3-bar-item w3-buttn">Torneado</a>
-                                      <a href="taladrado.html" class="w3-bar-item w3-buttn">Taladrado</a>
-                                      <a href="fresado.html" class="w3-bar-item w3-buttn">Freasado</a>
-                                      
-                              	
-                                    </div>	
-                                        <!-- redes sociales -->
-                                        <div id="social">
+		
+  				
+        <img id="hamburguesa" src="../../../logo/menu1.png" onclick="w3_open()"></img>
+                <!-- Sidebar -->
+        <div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
+        </div>
+        
+        <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+            	
+        	<img id="alexis-sidebar" src="../../../logo/LOGOb.png"></img>
+                   	
+                 <div id="letes">
+                    <div class="scroll-menu-desplegable">
+                        
+                                          
+                        <a href="../seleccion/Torneado.html"  class="w3-buttn">
+                            Torneado
+                        </a>
+                        <a href="../seleccion/fresado.html" class="w3-buttn">
+                            Fresado
+                        </a>
+                        <a href="../seleccion/taladrado.html" class="w3-buttn">
+                            Taladrado
+                        </a>
+                        <a href="../seleccion/roscado.html" class="w3-buttn">
+                            Roscado
+                        </a>
+                        <a class="w3-buttn">
+                            Ajuste
+                        </a>
+                        <a  class="w3-buttn">
+                            Ayuda
+                        </a>
+                        <a onClick="w3_close()" class=" w3-buttn cerrar-menu">
+                        	Cerrar menu
+                        </a>
+                     
+                    </div>  
+                 </div>        
+                 
+                 <!-- redes sociales -->
+                 <div id="social">
                                         
-                                            <a  href="#">
-                                                <img class="facebook" onClick="face" src="../../../backround/f.png"></img>
-                                            </a>
-                                            <a href="#">
-                                                <img  class="linkedin"  src="../../../backround/in.png"></img>
-                                            </a>
-                                            <a href="#">
-                                                <img  class="twitter" src= "../../../backround/t.png"></img>
-                                            </a>
+                 	
+                    	<img class="facebook" onClick="face" src="../../../backround/f.png"></img>
+                 	
+                                    
+                    
+                    	<img  class="linkedin"  src="../../../backround/in.png"></img>
+                    
+                                    
+                    
+                    	<img  class="twitter" src= "../../../backround/t.png"></img>
+                    
+                                    <!--Fin redes sociales -->
+                      Copyright © All Rights Reserved.
+                                       
+                 </div>	
                                         
-                                        
-                                        
-                                                <div class="copyright">Copyright © All Rights Reserved.</div>
-                                        </div>
-                                        <!--Fin redes sociales -->
-                                    </div>
-                        		</div>
-                        </div>
+            
+        	</div> 
+            <a href="index.html">                   
+            	<img id="frases" src="../../../logo/Nombre-IronApp.png"></img>
+            </a>
+            <a href="index.html">
+                <img id="casa" src="../../../img/imagenes/casa1.png"></img>
+            </a>    
 		</header>
-
-		<a href="../index.html">
-        	<img id="casa" src="../../../img/imagenes/casa.png"></img>
-        </a>
+		
 
 
 </head>
@@ -75,12 +95,14 @@
 
 	<div class="backgroung">
     	<div class="superior">
-        
         	taladrado
+            
+            
+            
         </div>
         
     	<div class="inferior">
-        	<div id="scroll-menu">
+        	<div id="scroll-tabla">
             	<table class="tabla" width="90%" border="1px" bordercolor="#333333">
                       <tr>
                         <td>Diametro <br><br>

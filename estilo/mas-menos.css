@@ -1,0 +1,184 @@
+
+				#contenido-todo{
+					height:60px;
+					width:90%;
+					margin-left:5%;
+					margin-top:5%;
+					/*border: 2px solid #333;*/
+					position:relative;
+					
+					border-bottom: 1px solid #000;
+					}
+				#contenido-todo2{
+					height:60px;
+					width:90%;
+					margin-left:5%;
+					margin-top:5%;
+					/*border: 2px solid #333;*/
+					position:relative;
+					
+					border-bottom: 1px solid #000;
+					}
+				#contenido-todo3{
+					height:60px;
+					width:90%;
+					margin-left:5%;
+					margin-top:5%;
+					/*border: 2px solid #333;*/
+					position:relative;
+					
+					border-bottom: 1px solid #000;
+					}
+				#contenido-todo4{
+					height:60px;
+					width:90%;
+					margin-left:5%;
+					margin-top:5%;
+					/*border: 2px solid #333;*/
+					position:relative;
+					
+					border-bottom: 1px solid #000;
+					}
+				#contenido-todo5{
+					height:60px;
+					width:90%;
+					margin-left:5%;
+					margin-top:5%;
+					/*border: 2px solid #333;*/
+					position:relative;
+					
+					border-bottom: 1px solid #000;
+					}
+				#calcular-rpm{
+					height:50px;
+					width:90%;
+					margin-left:5%;
+					margin-top:5%;
+					/*border: 2px solid #333;*/
+					position:relative;
+					
+					/*border-bottom: 1px solid #000;*/
+				}
+				.contenido1{
+					width:80%;
+					height:100%;
+					/*border:1px solid #333;*/
+					position:absolute;
+					}
+				.contenido2{
+					width:20%;
+					height:100%;
+					margin-left:80%;
+					/*border:1px solid #333;*/
+					position:absolute;
+					}
+				.contenido-mas-menos{
+					width:80%;
+					height:80%;
+					margin-left:5%;
+					margin-top:2.5%;
+					position:absolute;
+					border-left:1px dashed #000;
+					
+					}
+				.mas-menos{
+					
+					color:#FFF;
+					width: 80%;
+					height:80%;
+					margin-left: 20%;
+					border-radius:100%;
+					background-color:#366;
+					margin-top:20%;
+					
+					}
+				.mas-menos-text{
+					font-size:25px;
+					position:absolute;
+					text-align:center;
+					margin-left:20%;
+					margin-top:-10%;
+					}
+				.mas-menos-text2{
+					font-size:25px;
+					position:absolute;
+					text-align:center;
+					margin-left:20%;
+					margin-top:-10%;
+					}
+				.mas-menos-text3{
+					font-size:25px;
+					position:absolute;
+					text-align:center;
+					margin-left:20%;
+					margin-top:-10%;
+					}
+				.mas-menos-text4{
+					font-size:25px;
+					position:absolute;
+					text-align:center;
+					margin-left:20%;
+					margin-top:-10%;
+					}
+				.mas-menos-text5{
+					font-size:25px;
+					position:absolute;
+					text-align:center;
+					margin-left:20%;
+					margin-top:-10%;
+					}	
+				.contenido-img{
+					width:30%;
+					height:100%;
+					/*border:1px solid #333;*/
+					position:absolute;
+					}
+				.boton-img{
+					position:absolute;
+					height:90%;
+					width:90%;
+					margin-top:4%;
+					margin-left:5%;
+					}
+				.contenido-text{
+					width:70%;
+					height:100%;
+					margin-left:30%;
+					/*border:1px solid #333;*/
+					position:absolute;
+					}
+				.text-calculadora{
+					width:70%;
+					height:50%;
+					margin-left:10%;
+					margin-top:10%;
+					position:absolute;
+					/*border:1px solid #333;*/
+					font-size:15px;
+					color:#000;
+						
+						}
+				.contenido3{
+					position:absolute;
+					margin-top:5px;
+					height:50px;
+					width:100%;
+					border-top: 1px dotted #666666;
+					}
+				fieldset{
+					height:100%;
+					width:90%;
+					margin-left:0%;
+					margin-top:5px;
+					}
+				legend {
+					  background-color: gray;
+					  color: white;
+					
+					}
+				.resultado-rpm1{
+					font-size:14px;
+					margin-top:0%;
+					margin-left:2%;}
+					
+ 

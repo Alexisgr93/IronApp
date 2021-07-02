@@ -1,0 +1,85 @@
+#scroll-fieldset{
+	width: 90%;
+	height: 90%;
+	overflow-y: scroll;
+	position: absolute;
+	margin: 0%;
+	padding: 0%;
+	}
+.mensaje p{
+	font-size:10px;
+	color:#0F9;}
+.mensaje{
+	width:90%;
+	margin-top:91%;
+	margin-left:5%;
+	}
+.menu-calculadora p{
+	font-size:18px;
+	margin-left:5.5%;
+	}
+label{
+	font-size:18px;}
+.menu-calculadora{
+	position:absolute;
+	margin-top:-1%;
+	height:200px;
+	width:90%;
+	margin-left:5%;
+}
+fieldset{
+	height:100%;
+	width:90%;
+	margin-left:0%;
+	margin-top:5px;
+}
+legend {
+    background-color: gray;
+	color: white;
+	margin-top:-5%;					
+}
+
+.cajaCerrar{
+	height:30px;
+	width:30px;
+	margin-left:90.5%;
+	/*border-radius:100%;*/
+	background-color:#0C6;}
+.cajaCerrar a{
+	color:#FFF;
+	margin-left: 5px;}
+	
+	
+.w3-sidebar2{
+	display:block;
+	height:78%; 
+	bottom: 10%;
+	width:100%;
+	background-color: rgba(51,51,51,1);
+	background-repeat: repeat;
+	position:fixed!important;
+	z-index:1;
+	color:#FFF;/*color del texto*/
+	text-decoration:none;
+	border-top-left-radius:15px;
+	border-bottom-left-radius:15px;
+
+}
+
+.w3-animate-right{/*REVISAR*/
+	position:absolute;
+	animation:animateright 1.5s;
+	-webkit-transition:right 1.5s;
+	-moz-transition:right 1.5s;
+	-o-transition:right 1.5s;
+	-ms-transition:right 1.5s;
+}
+
+@keyframes animateright{/*REVISAR*/
+	from{
+		right:-100%;
+	opacity:0
+	} 
+	to{right:0%;
+	opacity:1}
+}

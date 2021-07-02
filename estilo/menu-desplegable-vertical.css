@@ -1,7 +1,6 @@
 .superior{
 	height:20%;
-	position:relative;
-	/*background-color:rgba(255,255,0,1);*/
+	background-color:rgba(255,255,0,1);
 	}
 
 
@@ -9,11 +8,7 @@
 	height:80%;
 	position:relative;
 	}
-	
 
-	
-	
-	
 .tabla{
 	text-align: center;
 	position: absolute;
@@ -44,7 +39,7 @@ input{
 .w3-sidebar1{
 	display:block;
 	height:98%; 
-	bottom: -10%;
+	margin-bottom:-20%;
 	width:100%;
 	background-color: rgba(51,51,51,1);
 	background-repeat: repeat;
@@ -85,104 +80,62 @@ input{
 	bottom:-100%;
 	opacity:0
 	} 
-	to{bottom:-12%;
+	to{bottom:0%;
 	opacity:1}
 }
 
-
+.selector{
+	height:10%;
+	background-color:#CCC;
+}
 
 .mobile-container {
-  width: 100%;
+  max-width: 480px;
+  margin: auto;
   background-color: #555;
-  height: 90%;
+  height: 500px;
   color: white;
+  border-radius: 10px;
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
 
-
-
-
-
-
-
-
-
-
-#scroll5{
-	overflow-y: scroll;
-	height: 85%;
-	width:100%;
-	}
-#AceroNoAleado{
-	height:80px;
-	width:100%;
-	margin-left:0%;
-	margin-top:2%;
-	diplay:none;
-	}	
-#Fundicion{
-	height:80px;
-	width:100%;
-	margin-left:0%;
-	margin-top:2%;
+.topnav #myLinks {
+  display: none;
+}
+#myLinks1{
 	display:none;
 }
-#AceroInoxidable{
-	height:80px;
-	width:100%;
-	margin-left:0%;
-	margin-top:2%;
+#myLinks2{
 	display:none;
 }
-#AceroTemplado{
-	height:80px;
-	width:100%;
-	margin-left:0%;
-	margin-top:2%;
-	display:none;
-}
-#AleacionForja{
-	height:80px;
-	width:100%;
-	margin-left:0%;
-	margin-top:2%;
-	display:none;
-}
-#AleacionTermo{
-	height:80px;
-	width:100%;
-	margin-left:0%;
-	margin-top:2%;
-	display:none;
-}
-
-.topnav button{
-
+.topnav a {
   color: white;
-  padding: 5%;
-  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  float: left;
-	}
+  font-size: 17px;
+  display: block;
+}
 
-.P{
-	background-color:#D1E5F8;
-	}
-.K{
-	background-color:#EBCEE2;
-	}
-.M{
-	background-color:#E0DDB2;
-	}
-.N{
-	background-color:#D0E4CB;
-	}
-.S{
-	background-color:#E8DFCD;
-	}
-.H{
-	background-color:#EFF3F6;
-	}
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+

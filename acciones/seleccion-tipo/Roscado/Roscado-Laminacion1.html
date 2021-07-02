@@ -126,7 +126,7 @@
                         <table class="tabla" width="100%" border="1px" bordercolor="#333333">
                         	<tr>
                             	<td>
-                                	<div class="calc" id="DC123">Dc: </div>
+                                	<div class="calc" id="DN123">DN: </div>
                                 </td>
                                 <td>
                                 	<div class="calc" id="VC123">Vc: </div>
@@ -345,13 +345,13 @@
                         <div class="menu-calculadora">
                             <fieldset>
                                 <legend>Calcular n (RPM)</legend>
-                                <label for="">Ingrese el diametro de Herramienta:</label>
-                                <input type="number" id="Dc" placeholder="mm"></input>
+                                <label for="">Ingrese el diametro nominal:</label>
+                                <input type="number" id="num" placeholder="mm"></input>
                                 <br><br>
                                 <label for="">Ingrese la velocidad de corte:</label>
-                                <input type="number" id="Vc" placeholder="m/min"></input>
+                                <input type="number" id="num1" placeholder="m/min"></input>
                                 <br>
-                                <input type="button" onclick="CalcularRPM()" value="Calucular">
+                                <input type="button" onclick="CalcularRoscadoMachLamRPM()" value="Calucular">
                                 <br/>
                             </fieldset>
                             
@@ -405,13 +405,13 @@
                         <div class="menu-calculadora">
                             <fieldset>
                                 <legend>Calcular VC</legend>
-                                <label for="">Ingrese el diametro de Herramienta:</label>
-                                <input type="number" id="Dc8" placeholder="mm">
+                                <label for="">Ingrese el diametro Nominal:</label>
+                                <input type="number" id="DN" placeholder="mm">
                                 <br><br>
                                 <label for="">Ingrese n (RPM):</label>
                                 <input type="number" id="n1" placeholder="RPM">
                                 <br>
-                                <input type="button" onclick="CalucularVC();" value="Calucular">
+                                <input type="button" onclick="CalucularRoscadoMachLamVC();" value="Calucular">
                                 <br/>
                             </fieldset>
                             
