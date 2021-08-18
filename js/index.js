@@ -38,9 +38,6 @@ function datos(){
 
 						
 				};
-
-
-/*
 				
  (function (){
 	var content = document.getElementById("geolocation-test");
@@ -61,9 +58,6 @@ function datos(){
 		/*Muestra la latitud en pantalla
 			content.innerHTML = "<p><strong>Latitud:</strong> " + lat + "</p><p><strong>Longitud:</strong> " + lon + "</p>";*/
 			
-
-
-/*
 		var	rad = function(x) {return x*Math.PI/180;}
   var R = 6378.137; //Radio de la tierra en km 
   var dLat = rad( las - objPosition.coords.latitude );
@@ -115,7 +109,6 @@ function datos(){
 	}
 })();
 
-*/
 
 
 
