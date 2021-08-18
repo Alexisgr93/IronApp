@@ -345,11 +345,11 @@
                         <div class="menu-calculadora">
                             <fieldset>
                                 <legend>Calcular n (RPM)</legend>
-                                <label for="">Ingrese el diametro de Herramienta:</label>
-                                <input type="number" id="Dc" placeholder="mm"></input>
+                                <label for="">Ingrese el D<sub>c</sub>:</label>
+                                <input type="number" id="Dc" placeholder="Diametro de Corte (mm)"></input>
                                 <br><br>
-                                <label for="">Ingrese la velocidad de corte:</label>
-                                <input type="number" id="Vc" placeholder="m/min"></input>
+                                <label for="">Ingrese la V<sub>c</sub>:</label>
+                                <input type="number" id="Vc" placeholder="Velocidad de Corte (m/min)"></input>
                                 <br>
                                 <input type="button" onclick="CalcularRPM()" value="Calucular">
                                 <br/>
@@ -375,7 +375,7 @@
                                 <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
                             </div>
                             <div class="contenido-text">
-                                <div class="text-calculadora">Calcular VC</div>
+                                <div class="text-calculadora">Calcular V<sub>c</sub></div>
                             </div>
                         </div>
                         <div class="contenido2"  onClick="muestra_ocultaVC('CalcularVC')">
@@ -388,8 +388,8 @@
                      </div>
                      <div id="CalcularVC" class="contenido3">
                          <fieldset>
-                            <legend>Resultado de VC</legend>
-                            <p class="calc resultado-rpm1" id="VC1">VC:</p>
+                            <legend>Resultado de V<sub>c</sub></legend>
+                            <p class="calc resultado-rpm1" id="VC1">V<sub>c</sub>:</p>
                          </fieldset>
                      </div>                
                 </div>
@@ -404,9 +404,9 @@
                     </div> 	
                         <div class="menu-calculadora">
                             <fieldset>
-                                <legend>Calcular VC</legend>
-                                <label for="">Ingrese el diametro de Herramienta:</label>
-                                <input type="number" id="Dc8" placeholder="mm">
+                                <legend>Calcular V<sub>c</sub></legend>
+                                <label for="">Ingrese el D<sub>c</sub>:</label>
+                                <input type="number" id="Dc8" placeholder="Diametro de Herramienta de corte (mm)">
                                 <br><br>
                                 <label for="">Ingrese n (RPM):</label>
                                 <input type="number" id="n1" placeholder="RPM">
@@ -415,7 +415,7 @@
                                 <br/>
                             </fieldset>
                             
-                            <p id="VC8"> Valor de VC: </p>
+                            <p id="VC8"> Valor de V<sub>c</sub>: </p>
                         </div>
                         
                         <div class="mensaje">
@@ -433,7 +433,7 @@
                                 <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
                             </div>
                             <div class="contenido-text">
-                                <div class="text-calculadora">Calcular Vfe</div>
+                                <div class="text-calculadora">Calcular V<sub>fe</sub></div>
                             </div>
                         </div>
                         <div class="contenido2"  onClick="muestra_ocultaVF('CalcularVF')">
@@ -446,8 +446,8 @@
                      </div>
                      <div id="CalcularVF" class="contenido3">
                          <fieldset>
-                            <legend>Resultado de Vfe</legend>
-                            <p class="calc resultado-rpm1" id="Vfe123">Vfe:</p>
+                            <legend>Resultado de V<sub>fe</sub></legend>
+                            <p class="calc resultado-rpm1" id="Vfe123">V<sub>fe</sub>:</p>
                          </fieldset>
                      </div>                
                 </div>
@@ -462,9 +462,9 @@
                     </div> 	
                         <div class="menu-calculadora">
                             <fieldset>
-                            	<legend>Calcular Vfe</legend>
+                            	<legend>Calcular V<sub>fe</sub></legend>
                                 <div id="scroll-fieldset">
-                                <label for="">Ingrese fz:</label>
+                                <label for="">Ingrese f<sub>z</sub>:</label>
                                 <input type="text" id="fz" placeholder="mm">
                                 <br>
                                 <label for="">Ingrese z:</label>
@@ -478,7 +478,7 @@
                                 </div>
                             </fieldset>
                             
-                            <p id="Vfe1"> Valor de Vfe: </p>
+                            <p id="Vfe1"> Valor de V<sub>fe</sub>: </p>
                         </div>
                         
                         <div class="mensaje">
@@ -496,7 +496,7 @@
                                 <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
                             </div>
                             <div class="contenido-text">
-                                <div class="text-calculadora">Calcular VF</div>
+                                <div class="text-calculadora">Calcular V<sub>f</sub></div>
                             </div>
                         </div>
                         <div class="contenido2"  onClick="muestra_ocultaFZ('CalcularFZ')">
@@ -509,8 +509,8 @@
                      </div>
                      <div id="CalcularFZ" class="contenido3">
                          <fieldset>
-                            <legend>Resultado de VF</legend>
-                            <p class="calc resultado-rpm1" id="Vf12">Vf:</p>
+                            <legend>Resultado de V<sub>f</sub></legend>
+                            <p class="calc resultado-rpm1" id="Vf12">V<sub>f</sub>:</p>
                          </fieldset>
                      </div>                
                 </div>
@@ -525,15 +525,15 @@
                     </div> 	
                         <div class="menu-calculadora">
                             <fieldset>
-                            	<legend>Calcular VF</legend>
+                            	<legend>Calcular V<sub>f</sub></legend>
                                 <div id="scroll-fieldset">
-                                <label for="">Ingrese Vfe:</label>
+                                <label for="">Ingrese V<sub>fe</sub>:</label>
                                 <input type="number" id="num1" placeholder="mm/min">
                                 <br>
-                                <label for="">Ingrese Dn:</label>
+                                <label for="">Ingrese D<sub>n</sub>:</label>
                                 <input type="number" id="num2" placeholder="mm">
                                 <br>
-                                <label for="">Ingrese Dc:</label>
+                                <label for="">Ingrese D<sub>c</sub>:</label>
                                 <input type="number" id="num3" placeholder="mm">
                                 <br>
                                 <input type="button" onclick="CalcularRoscadoVF()" value="Calucular">
@@ -541,7 +541,7 @@
                                 </div>
                             </fieldset>
                             
-                            <p id="Vf1"> Valor de Vf: </p>
+                            <p id="Vf1"> Valor de V<sub>f</sub>: </p>
                         </div>
                         
                         <div class="mensaje">

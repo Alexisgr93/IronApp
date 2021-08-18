@@ -344,11 +344,11 @@
                         <div class="menu-calculadora">
                             <fieldset>
                                 <legend>Calcular n (RPM)</legend>
-                                <label for="">Ingrese el diametro de corte:</label>
-                                <input type="number" id="Dc" placeholder="mm"></input>
+                                <label for="">Ingrese el D<sub>c</sub>:</label>
+                                <input type="number" id="Dc" placeholder="Diametro de Corte (mm)"></input>
                                 <br><br>
-                                <label for="">Ingrese la velocidad de corte:</label>
-                                <input type="number" id="Vc" placeholder="m/min"></input>
+                                <label for="">Ingrese la V<sub>c</sub>:</label>
+                                <input type="number" id="Vc" placeholder="Velocidad de corte (m/min)"></input>
                                 <br>
                                 <input type="button" onclick="CalcularRPM()" value="Calucular">
                                 <br/>
@@ -374,7 +374,7 @@
                                 <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
                             </div>
                             <div class="contenido-text">
-                                <div class="text-calculadora">Calcular VC</div>
+                                <div class="text-calculadora">Calcular V<sub>c</sub></div>
                             </div>
                         </div>
                         <div class="contenido2"  onClick="muestra_ocultaVC('CalcularVC')">
@@ -387,8 +387,8 @@
                      </div>
                      <div id="CalcularVC" class="contenido3">
                          <fieldset>
-                            <legend>Resultado de VC</legend>
-                            <p class="calc resultado-rpm1" id="VC1">VC:</p>
+                            <legend>Resultado de V<sub>c</sub></legend>
+                            <p class="calc resultado-rpm1" id="VC1">V<sub>c</sub>:</p>
                          </fieldset>
                      </div>                
                 </div>
@@ -403,7 +403,7 @@
                     </div> 	
                         <div class="menu-calculadora">
                             <fieldset>
-                                <legend>Calcular VC</legend>
+                                <legend>Calcular V<sub>c</sub></legend>
                                 <label for="">Ingrese el diametro de corte:</label>
                                 <input type="number" id="Dc8" placeholder="mm">
                                 <br><br>
@@ -414,7 +414,7 @@
                                 <br/>
                             </fieldset>
                             
-                            <p id="VC8"> Valor de VC: </p>
+                            <p id="VC8"> Valor de V<sub>c</sub>: </p>
                         </div>
                         
                         <div class="mensaje">
@@ -432,7 +432,7 @@
                                 <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
                             </div>
                             <div class="contenido-text">
-                                <div class="text-calculadora">Calcular VF</div>
+                                <div class="text-calculadora">Calcular V<sub>f</sub></div>
                             </div>
                         </div>
                         <div class="contenido2"  onClick="muestra_ocultaVF('CalcularVF')">
@@ -445,8 +445,8 @@
                      </div>
                      <div id="CalcularVF" class="contenido3">
                          <fieldset>
-                            <legend>Resultado de VF</legend>
-                            <p class="calc resultado-rpm1" id="VF123">VF:</p>
+                            <legend>Resultado de V<sub>f</sub></legend>
+                            <p class="calc resultado-rpm1" id="VF123">V<sub>f</sub>:</p>
                          </fieldset>
                      </div>                
                 </div>
@@ -461,23 +461,23 @@
                     </div> 	
                         <div class="menu-calculadora">
                             <fieldset>
-                            	<legend>Calcular VF</legend>
+                            	<legend>Calcular V<sub>f</sub></legend>
                                 <div id="scroll-fieldset">
-                                <label for="">Ingrese fz:</label>
-                                <input type="text" id="fz" placeholder="mm">
+                                <label for="">Ingrese f<sub>z</sub>:</label>
+                                <input type="number" id="fz" placeholder="mm">
                                 <br>
                                 <label for="">Ingrese z:</label>
-                                <input type="text" id="z" placeholder="Nº de dientes">
+                                <input type="number" id="z" placeholder="Nº de dientes">
                                 <br>
                                 <label for="">Ingrese n(RPM):</label>
-                                <input type="text" id="n123" placeholder="RPM">
+                                <input type="number" id="n123" placeholder="RPM">
                                 <br>
                                 <input type="button" onclick="CalcularVF()" value="Calucular">
                                 <br/>
                                 </div>
                             </fieldset>
                             
-                            <p id="VF1"> Valor de VF: </p>
+                            <p id="VF1"> Valor de V<sub>f</sub>: </p>
                         </div>
                         
                         <div class="mensaje">
@@ -495,7 +495,7 @@
                                 <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
                             </div>
                             <div class="contenido-text">
-                                <div class="text-calculadora">Calcular FZ</div>
+                                <div class="text-calculadora">Calcular f<sub>z</sub></div>
                             </div>
                         </div>
                         <div class="contenido2"  onClick="muestra_ocultaFZ('CalcularFZ')">
@@ -508,8 +508,8 @@
                      </div>
                      <div id="CalcularFZ" class="contenido3">
                          <fieldset>
-                            <legend>Resultado de FZ</legend>
-                            <p class="calc resultado-rpm1" id="FZ12">FZ:</p>
+                            <legend>Resultado de f<sub>z</sub></legend>
+                            <p class="calc resultado-rpm1" id="FZ12">f<sub>z</sub>:</p>
                          </fieldset>
                      </div>                
                 </div>
@@ -524,9 +524,9 @@
                     </div> 	
                         <div class="menu-calculadora">
                             <fieldset>
-                            	<legend>Calcular FZ</legend>
+                            	<legend>Calcular f<sub>z</sub></legend>
                                 <div id="scroll-fieldset">
-                                <label for="">Ingrese vf:</label>
+                                <label for="">Ingrese v<sub>f</sub>:</label>
                                 <input type="number" id="txtN1" placeholder="mm/min">
                                 <br>
                                 <label for="">Ingrese z:</label>
@@ -540,7 +540,7 @@
                                 </div>
                             </fieldset>
                             
-                            <p id="FZ1"> Valor de FZ: </p>
+                            <p id="FZ1"> Valor de f<sub>z</sub>: </p>
                         </div>
                         
                         <div class="mensaje">
@@ -589,13 +589,13 @@
                             <fieldset>
                             	<legend>Calcular Q</legend>
                                 <div id="scroll-fieldset">
-                                <label for="">Ingrese ae:</label>
+                                <label for="">Ingrese a<sub>e</sub>:</label>
                                 <input type="number" id="ae1" placeholder="ancho de corte mm">
                                 <br>
-                                <label for="">Ingrese ap:</label>
+                                <label for="">Ingrese a<sub>p</sub>:</label>
                                 <input type="number" id="ap2" placeholder="profundidad de corte mm">
                                 <br>
-                                <label for="">Ingrese vf:</label>
+                                <label for="">Ingrese v<sub>f</sub>:</label>
                                 <input type="number" id="vf3" placeholder="mm/min">
                                 <br>
                                 <input type="button" onclick="CalcularQ()" value="Calucular">
@@ -603,7 +603,7 @@
                                 </div>
                             </fieldset>
                             
-                            <p id="Q123"> Valor de VC: </p>
+                            <p id="Q123"> Valor de V<sub>c</sub>: </p>
                         </div>
                         
                         <div class="mensaje">

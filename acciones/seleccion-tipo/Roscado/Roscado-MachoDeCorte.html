@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="../../../estilo/index.css">
     <link rel="stylesheet" href="../../../estilo/acciones-css/estilo-body.css">
     <link rel="stylesheet" href="../../../estilo/tabla.css">
+    <link rel="stylesheet" href="../../../estilo/horizontal-derecho.css">
+    <link rel="stylesheet" href="../../../estilo/mas-menos.css">
    
-   <script src="../../../js/index.js"></script>
+   <script src="../../../js/index.js"></script> 
+   <script src="../../../js/vertival.js"></script>
+   <script src="../../../js/TablaDeCalculos.js"></script>
+   <script src="../../../js/horizontal-derecho.js"></script>
+   <script src="../../../js/mas-menos.js"></script>
 </head>
 
 		<header>
@@ -94,98 +100,596 @@
 <section>
 
 	<div class="backgroung">
+    
     	<div class="superior">
-        	roscado
+        	<div class="slideshow-container">
+
+            	<div class="mySlides fade">
+                	<div class="numbertext">1 / 3</div>
+                  		<img  onclick="material_open()" id="grande"  onclick="cambiarImagen(this)" src="../../../img/imagenes/Material/SM.png">
+                  			<div class="text" onclick="material_open()">Caption One</div>
+                  		</img>
+               	</div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img id="grande" src="../../../img/imagenes/Material/SM.png" >
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                	
+                    <div class="scroll-calc">
+                	
+                    	<div class="numbertext">3 / 3</div>
+                        
+                        <table class="tabla" width="100%" border="1px" bordercolor="#333333">
+                        	<tr>
+                            	<td>
+                                	<div class="calc" id="DN123">DN: </div>
+                                </td>
+                                <td>
+                                	<div class="calc" id="VC123">Vc: </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="calc" id="RPM1234">RPM: </div>
+                            	</td>
+                                <td>
+                               		<div class="calc" id="vfe1234">Vfe: </div>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="calc" id="fz123">fz: </div>
+                                </td>
+                                <td>
+                                	<div class="calc" id="Z123">Z: </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                	<div class="calc" id="vf1234">vf: </div>
+                                </td>
+                                <td>
+                               		<div class="calc" id="Dn123">Dn: </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                	<div class="calc" id="Dc123">Dc: </div>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                  		
+                        <div class="text">Caption Three</div>
+                  	
+                    </div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+             </div>
             
+        
+            <div class="w3-overlay1" onclick="material_close()" style="cursor:pointer" id="myOverlay1">
+            </div>
             
-            
+            <div class="w3-sidebar1 w3-bar-block w3-animate-bottom" style="display:none;z-index:5" id="mySidebar1">
+               		
+            	<div class="mobile-container">
+
+                	<div class="topnav">
+                            <button class="active P" onClick="myFunction1()">
+                              P
+                            </button>
+                            <button class="active K" onclick="myFunction2()">
+                              K
+                            </button>
+                            <button class="active M" onclick="myFunction3()">
+                              M
+                            </button>
+                            <button class="active N" onclick="myFunction4()">
+                              N
+                            </button>
+                            <button class="active S" onclick="myFunction5()">
+                              S
+                            </button>
+                            <button class="active H" onclick="myFunction6()">
+                              H
+                            </button>
+                            
+                        </div>
+                           
+                    	<div id="scroll5">
+                                
+                                <div id="AceroNoAleado"  onclick="text() material_open()">
+                                    
+                                     <img class="peque" src="../../../img/imagenes/Material/AceroNoAleado/P1.png" onclick="cambiarImagen(this); material_close()"></img>
+                                                          
+                                     <img class="peque" src="../../../img/imagenes/Material/AceroNoAleado/P2.png" onclick="cambiarImagen(this); material_close()"></img>
+                                                              
+                                     <img class="peque" src="../../../img/imagenes/Material/AceroNoAleado/P3.png" onclick="cambiarImagen(this); material_close()"></img>
+                                     
+                                     <img class="peque" src="../../../img/imagenes/Material/AceroNoAleado/P4.png" onclick="cambiarImagen(this); material_close()"></img>
+                                     
+                                     <img class="peque" src="../../../img/imagenes/Material/AceroNoAleado/P5.png" onclick="cambiarImagen(this); material_close()"></img>
+                                     
+                                     <img class="peque" src="../../../img/imagenes/Material/AceroNoAleado/P6.png" onclick="cambiarImagen(this); material_close()"></img>
+                                     
+                                     <img class="peque" src="../../../img/imagenes/Material/AceroNoAleado/P7.png" onclick="cambiarImagen(this); material_close()"></img>
+                                  
+                                </div>
+                              
+                                <div id="Fundicion" onclick="text() material_open()">
+                                
+                                     <img class="peque" src="../../../img/imagenes/Material/Fundicion/K1.png" onclick="cambiarImagen(this); material_close()"></img>
+                                                       
+                                     <img class="peque" src="../../../img/imagenes/Material/Fundicion/K2.png" onclick="cambiarImagen(this); material_close()"></img>
+                                      
+                                     <img class="peque" src="../../../img/imagenes/Material/Fundicion/K3.png" onclick="cambiarImagen(this); material_close()"></img>
+                                     
+                                     <img class="peque" src="../../../img/imagenes/Material/Fundicion/K4.png" onclick="cambiarImagen(this); material_close()"></img>
+                                     
+                                     <img class="peque" src="../../../img/imagenes/Material/Fundicion/K5.png" onclick="cambiarImagen(this); material_close()"></img>
+                                     
+                                     <img class="peque" src="../../../img/imagenes/Material/Fundicion/K6.png" onclick="cambiarImagen(this); material_close()"></img>
+                                 
+                                  
+                                </div>
+                                
+                                <div id="AceroInoxidable" onclick="text() material_open()">
+                                
+                                      <img class="peque" src="../../../img/imagenes/Material/AceroInoxidable/M1.png" onclick="cambiarImagen(this); material_close()"></img>
+                                      
+                                      <img class="peque" src="../../../img/imagenes/Material/AceroInoxidable/M2.png" onclick="cambiarImagen(this); material_close()"></img>
+                                      
+                                      <img class="peque" src="../../../img/imagenes/Material/AceroInoxidable/M3.png" onclick="cambiarImagen(this); material_close()"></img>
+                                
+                                </div>
+                                
+                                <div id="AleacionForja" onclick="text() material_open()">
+                                
+                                    <img class="peque" src="../../../img/imagenes/Material/AleacionForja/N1.png" onclick="cambiarImagen(this); material_close()"></img>
+                                  
+                                    <img class="peque" src="../../../img/imagenes/Material/AleacionForja/N2.png" onclick="cambiarImagen(this); material_close()"></img>
+                                  
+                                    <img class="peque" src="../../../img/imagenes/Material/AleacionForja/N3.png" onclick="cambiarImagen(this); material_close()"></img>
+                                 
+                                    <img class="peque" src="../../../img/imagenes/Material/AleacionForja/N4.png" onclick="cambiarImagen(this); material_close()"></img>
+                                 
+                                    <img class="peque" src="../../../img/imagenes/Material/AleacionForja/N5.png" onclick="cambiarImagen(this); material_close()"></img>
+                                 
+                                    <img class="peque" src="../../../img/imagenes/Material/AleacionForja/N6.png" onclick="cambiarImagen(this); material_close()"></img>
+                                 
+                                    <img class="peque" src="../../../img/imagenes/Material/AleacionForja/N7.png" onclick="cambiarImagen(this); material_close()"></img>
+                                 
+                                </div>
+                                
+                                <div id="AleacionTermo" onclick="text() material_open()">
+                                
+                                     <img class="peque" src="../../../img/imagenes/Material/AleacionTermo/S1.png" onclick="cambiarImagen(this); material_close()"></img>
+                                                             
+                                     <img class="peque" src="../../../img/imagenes/Material/AleacionTermo/S2.png" onclick="cambiarImagen(this); material_close()"></img>
+                                      
+                                     <img class="peque" src="../../../img/imagenes/Material/AleacionTermo/S3.png" onclick="cambiarImagen(this); material_close()"></img>
+                                     
+                                     <img class="peque" src="../../../img/imagenes/Material/AleacionTermo/S4.png" onclick="cambiarImagen(this); material_close()"></img>
+                                     
+                                     <img class="peque" src="../../../img/imagenes/Material/AleacionTermo/S5.png" onclick="cambiarImagen(this); material_close()"></img>
+                                     
+                                     <img class="peque" src="../../../img/imagenes/Material/AleacionTermo/S6.png" onclick="cambiarImagen(this); material_close()"></img>
+                                 
+                                </div>
+                                
+                                <div id="AceroTemplado" onclick="text() material_open()">
+                                
+                                     <img class="peque" src="../../../img/imagenes/Material/AceroTemplado/H1.png" onclick="cambiarImagen(this); material_close()"></img>
+                                                         
+                                     <img class="peque" src="../../../img/imagenes/Material/AceroTemplado/H2.png" onclick="cambiarImagen(this); material_close()"></img>
+                                      
+                                     <img class="peque" src="../../../img/imagenes/Material/AceroTemplado/H3.png" onclick="cambiarImagen(this); material_close()"></img>
+                                     
+                                     <img class="peque" src="../../../img/imagenes/Material/AceroTemplado/H4.png" onclick="cambiarImagen(this); material_close()"></img>
+                               
+                                </div>
+                          
+                        	</div>
+				</div>
+        	
+            </div> 
+        
         </div>
         
     	<div class="inferior">
+        	
         	<div id="scroll-tabla">
-            	<table class="tabla" width="90%" border="1px" bordercolor="#333333" onclick="datos()">
-                      <tr>
-                        <td>Diametro nominal de rosca<br>
-                        <input type="text" size="15" maxlength="30" name="nombre" id="txtN1">
-                        <br>
-                        DN | mm
-                        </td>
-                        <td>Paso de rosca<br>
-                        <input type="text" size="15" maxlength="30" name="nombre" id="txtN2"><br>
-                        p | mm
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Profundidad de rosca<br>
-                        <input type="text" size="15" maxlength="30" name="nombre" id="txtN3"><br>
-                        Lc | mm
-                        </td>
-                        <td>Velocidad de corte<br>
-                        <input type="text" size="15" maxlength="30" name="nombre"><br>
-                        vc | m/min
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Numero de revoluciones<br>
-                        <input type="text" size="15" maxlength="30" name="nombre"><br>
-                        n | RPM
-                        </td>
-                        <td>Avance central<br>
-                        <input type="text" size="15" maxlength="30" name="nombre"><br>
-                        vf | mm/min
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Numero de ranuras<br><br>
-                        <input type="text" size="15" maxlength="30" name="nombre"><br>
-                        Z
-                        </td>
-                        <td>Longitud de cono de entrada<br>
-                        <input type="text" size="15" maxlength="30" name="nombre"><br>
-                        Lf | mm
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Angulo de desprendimiento<br>
-                        <input type="text" size="15" maxlength="30" name="nombre"><br>
-                        Y | º
-                        </td>
-                        <td>Rendimiento<br>
-                        <input type="text" size="15" maxlength="30" name="nombre"><br>
-                        n | %
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Factor de desgaste<br>
-                        <input type="text" size="15" maxlength="30" name="nombre"><br>
-                        %
-                        </td>
-                        <td>Formula para el calculo (Fx)<br>
-                        <button> n</button><br>
-                        Fx<br> 
-                        </td>
-                      </tr>
-				</table>
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-		</div>
-
-
-
+            	<div id="contenido-todo">
+                    <div id="calcular-rpm">
+                        <div class="contenido1" onclick="calculadora_open()" class="w3-overlay2" style="cursor:pointer" id="myOverlay">
+                            <div class="contenido-img">
+                                <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
+                            </div>
+                            <div class="contenido-text">
+                                <div class="text-calculadora">Calcular RPM</div>
+                            </div>
+                        </div>
+                        <div class="contenido2"  onClick="muestra_ocultaRPM('CalcularRPM')">
+                            <div class="contenido-mas-menos">
+                                <div class="mas-menos">
+                                    <div class="mas-menos-text" id="mas-menos-text">+</div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div id="CalcularRPM" class="contenido3">
+                         <fieldset>
+                            <legend>Resultado de RPM</legend>
+                            <p class="calc resultado-rpm1" id="RPM123">RPM:</p>
+                         </fieldset>
+                     </div>                
+                </div>
+                <div  onclick="calculadora_close()" style="cursor:pointer" id="myOverlay2">
+                </div>
+                
+                <div class="w3-sidebar2 w3-bar-block w3-animate-right" style="display:none;z-index:5" id="mySidebar2">
+                
+                    <div class="cajaCerrar">
+                        <a onClick="calculadora_close()">X
+                        </a>
+                    </div> 	
+                        <div class="menu-calculadora">
+                            <fieldset>
+                                <legend>Calcular n (RPM)</legend>
+                                <label for="">Ingrese el diametro nominal:</label>
+                                <input type="number" id="num" placeholder="mm"></input>
+                                <br><br>
+                                <label for="">Ingrese la velocidad de corte:</label>
+                                <input type="number" id="num1" placeholder="m/min"></input>
+                                <br>
+                                <input type="button" onclick="CalcularRoscadoMachLamRPM()" value="Calucular">
+                                <br/>
+                            </fieldset>
+                            
+                            <p id="n"> Valor de n: </p>
+                        </div>
+                        <script>
+						
+						</script>
+                        <div class="mensaje">
+                            <p>*Recuerdo que los valores podran ser visualizados en la pestaña mas (+) 
+                            y tambien podran ser visualizados a partir de la 3ª pestaña de selectiva.</p>
+                        </div>
+                          
+                </div>
+                
+                
+                <div id="contenido-todo2">
+                    <div id="calcular-rpm">
+                        <div class="contenido1" onclick="calculadoraVC_open()" class="w3-overlay2" style="cursor:pointer" id="myOverlay3">
+                            <div class="contenido-img">
+                                <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
+                            </div>
+                            <div class="contenido-text">
+                                <div class="text-calculadora">Calcular V<sub>c</sub></div>
+                            </div>
+                        </div>
+                        <div class="contenido2"  onClick="muestra_ocultaVC('CalcularVC')">
+                            <div class="contenido-mas-menos">
+                                <div class="mas-menos">
+                                    <div class="mas-menos-text2" id="mas-menos-text2">+</div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div id="CalcularVC" class="contenido3">
+                         <fieldset>
+                            <legend>Resultado de V<sub>c</sub></legend>
+                            <p class="calc resultado-rpm1" id="VC1">V<sub>c</sub>:</p>
+                         </fieldset>
+                     </div>                
+                </div>
+                <div onclick="calculadoraVC_close()" style="cursor:pointer" id="myOverlay3">
+                </div>
+                
+                <div class="w3-sidebar2 w3-bar-block w3-animate-right" style="display:none;z-index:5" id="mySidebar3">
+                
+                    <div class="cajaCerrar">
+                        <a onClick="calculadoraVC_close()">X
+                        </a>
+                    </div> 	
+                        <div class="menu-calculadora">
+                            <fieldset>
+                                <legend>Calcular V<sub>c</sub></legend>
+                                <label for="">Ingrese el D<sub>N</sub>:</label>
+                                <input type="number" id="DN" placeholder="Diametro Nominal (mm)">
+                                <br><br>
+                                <label for="">Ingrese n (RPM):</label>
+                                <input type="number" id="n1" placeholder="RPM">
+                                <br>
+                                <input type="button" onclick="CalucularRoscadoMachLamVC();" value="Calucular">
+                                <br/>
+                            </fieldset>
+                            
+                            <p id="VC8"> Valor de V<sub>c</sub>: </p>
+                        </div>
+                        
+                        <div class="mensaje">
+                            <p>*Recuerdo que los valores podran ser visualizados en la pestaña mas (+) 
+                            y tambien podran ser visualizados a partir de la 3ª pestaña de selectiva.</p>
+                        </div>
+                          
+                </div>
+                
+                
+                <div id="contenido-todo3">
+                    <div id="calcular-rpm">
+                        <div class="contenido1" onclick="calculadoraVF_open()" class="w3-overlay2" style="cursor:pointer" id="myOverlay3">
+                            <div class="contenido-img">
+                                <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
+                            </div>
+                            <div class="contenido-text">
+                                <div class="text-calculadora">Calcular Kc</div>
+                            </div>
+                        </div>
+                        <div class="contenido2"  onClick="muestra_ocultaVF('CalcularVF')">
+                            <div class="contenido-mas-menos">
+                                <div class="mas-menos">
+                                    <div class="mas-menos-text3" id="mas-menos-text3">+</div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div id="CalcularVF" class="contenido3">
+                         <fieldset>
+                            <legend>Resultado de K<sub>c</sub></legend>
+                            <p class="calc resultado-rpm1" id="Kc12">K<sub>c</sub>:</p>
+                         </fieldset>
+                     </div>                
+                </div>
+                <div onclick="calculadoraVC_close()" style="cursor:pointer" id="myOverlay4">
+                </div>
+                
+                <div class="w3-sidebar2 w3-bar-block w3-animate-right" style="display:none;z-index:5" id="mySidebar4">
+                
+                    <div class="cajaCerrar">
+                        <a onClick="calculadoraVF_close()">X
+                        </a>
+                    </div> 	
+                        <div class="menu-calculadora">
+                            <fieldset>
+                            	<legend>Calcular K<sub>c</sub></legend>
+                                <div id="scroll-fieldset">
+                                <label for="">Ingrese K<sub>c1.1</sub>:</label>
+                                <input type="text" id="kc1" placeholder="Fuerza de corte especifica (Tabla) (N/mm2)">
+                                <br>
+                                <label for="">Ingrese P:</label>
+                                <input type="text" id="p" placeholder="Paso de rosca">
+                                <br>
+                                <label for="">Ingrese Z:</label>
+                                <input type="text" id="z" placeholder="Numero de ranuras">
+                                <br>
+                                <label for="">Ingrese L<sub>f</sub>:</label>
+                                <input type="text" id="lf" placeholder="Longitud del cono de entrada (mm)">
+                                <br>
+                                <label for="">Ingrese mc:</label>
+                                <input type="text" id="mc" placeholder="Valor de conicidad (Tabla)">
+                                <br>
+                                <input type="button" onclick="CalucularRoscadoMachLamKC()" value="Calucular">
+                                <br/>
+                                </div>
+                            </fieldset>
+                            
+                            <p id="Kc11"> Valor de K<sub>c</sub>: </p>
+                        </div>
+                        
+                        <div class="mensaje">
+                            <p>*Recuerdo que los valores podran ser visualizados en la pestaña mas (+) 
+                            y tambien podran ser visualizados a partir de la 3ª pestaña de selectiva.</p>
+                        </div>
+                          
+                </div>
+                
+                
+                <div id="contenido-todo4">
+                    <div id="calcular-rpm">
+                        <div class="contenido1" onclick="calculadoraFZ_open()" class="w3-overlay2" style="cursor:pointer" id="myOverlay3">
+                            <div class="contenido-img">
+                                <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
+                            </div>
+                            <div class="contenido-text">
+                                <div class="text-calculadora">Calcular M<sub>d</sub></div>
+                            </div>
+                        </div>
+                        <div class="contenido2"  onClick="muestra_ocultaFZ('CalcularFZ')">
+                            <div class="contenido-mas-menos">
+                                <div class="mas-menos">
+                                    <div class="mas-menos-text4" id="mas-menos-text4">+</div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div id="CalcularFZ" class="contenido3">
+                         <fieldset>
+                            <legend>Resultado de M<sub>d</sub></legend>
+                            <p class="calc resultado-rpm1" id="Md12">M<sub>d</sub>:</p>
+                         </fieldset>
+                     </div>                
+                </div>
+                <div onclick="calculadoraVC_close()" style="cursor:pointer" id="myOverlay5">
+                </div>
+                
+                <div class="w3-sidebar2 w3-bar-block w3-animate-right" style="display:none;z-index:5" id="mySidebar5">
+                
+                    <div class="cajaCerrar">
+                        <a onClick="calculadoraFZ_close()">X
+                        </a>
+                    </div> 	
+                        <div class="menu-calculadora">
+                            <fieldset>
+                            	<legend>Calcular M<sub>d</sub></legend>
+                                <div id="scroll-fieldset">
+                                <label for="">Ingrese K<sub>c</sub>:</label>
+                                <input type="number" id="kc9" placeholder="Fuerza de corte especifica (N/mm2)">
+                                <br>
+                                <label for="">Ingrese D<sub>N</sub>:</label>
+                                <input type="number" id="Dn9" placeholder="Diametro nominal de rosca (mm)">
+                                <br>
+                                <label for="">Ingrese P:</label>
+                                <input type="number" id="p9" placeholder="Paso nominaL de rosca">
+                                <br>
+                                <label for="">Ingrese L<sub>c</sub>:</label>
+                                <input type="number" id="lc9" placeholder="Profundidad de rosca (mm)">
+                                <br>
+                                <label for="">Ingrese &gamma;:</label>
+                                <input type="number" id="y9" placeholder="Angulo de Deprendimiento (°)">
+                                <br>
+                                <label for="">Ingrese &delta;:</label>
+                                <input type="number" id="g9" placeholder="Facto de Correccion (0,55 a 0,25)">
+                                <br>
+                                <input type="button" onclick="CalucularRoscadoMachRosMd()" value="Calucular">
+                                <br/>
+                                </div>
+                            </fieldset>
+                            
+                            <p id="Md1"> Valor de M<sub>d</sub>: </p>
+                        </div>
+                        
+                        <div class="mensaje">
+                            <p>*Recuerdo que los valores podran ser visualizados en la pestaña mas (+) 
+                            y tambien podran ser visualizados a partir de la 3ª pestaña de selectiva.</p>
+                        </div>
+                          
+                </div>
+                
+                
+                
+            </div>
+        
+			</div>
 
         <div>
     </div>
+    
+    <script>
+
+var imagenGrande = document.getElementById("grande");
+function cambiarImagen(imagen)
+	{
+		
+		imagenGrande.src = imagen.src;
+		
+	}
+	
+	
+	
+
+</script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  
+  slides[slideIndex-1].style.display = "block";  
+  
+}
+
+
+
+
+
+</script>
+<style>
+
+
+#grande{
+	width:100%;
+	position:absolute;
+	height:100%;
+	}
+
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 19% 35%;
+  position: relative;
+  bottom: 8px;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.calc{
+	color:#000;
+	}
+
+
+.scroll-calc{
+	overflow-y: scroll;
+	height: 100%;
+	width: 100%;
+	position:absolute;
+	}
+	
+
+
+</style>
 </section>
    <footer>
     	<img id="alexis" src="../../../logo/LOGOb.png"></img>
