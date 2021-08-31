@@ -49,6 +49,76 @@
 					
 					border-bottom: 1px solid #000;
 					}
+				#contenido-todo6{
+					height:60px;
+					width:90%;
+					margin-left:5%;
+					margin-top:5%;
+					/*border: 2px solid #333;*/
+					position:relative;
+					
+					border-bottom: 1px solid #000;
+					}
+				#contenido-todo7{
+					height:60px;
+					width:90%;
+					margin-left:5%;
+					margin-top:5%;
+					/*border: 2px solid #333;*/
+					position:relative;
+					
+					border-bottom: 1px solid #000;
+					}
+				#contenido-todo8{
+					height:60px;
+					width:90%;
+					margin-left:5%;
+					margin-top:5%;
+					/*border: 2px solid #333;*/
+					position:relative;
+					
+					border-bottom: 1px solid #000;
+					}
+				#contenido-todo9{
+					height:60px;
+					width:90%;
+					margin-left:5%;
+					margin-top:5%;
+					/*border: 2px solid #333;*/
+					position:relative;
+					
+					border-bottom: 1px solid #000;
+					}
+				#contenido-todo11{
+					height:60px;
+					width:90%;
+					margin-left:5%;
+					margin-top:5%;
+					/*border: 2px solid #333;*/
+					position:relative;
+					
+					border-bottom: 1px solid #000;
+					}
+				#contenido-todo12{
+					height:60px;
+					width:90%;
+					margin-left:5%;
+					margin-top:5%;
+					/*border: 2px solid #333;*/
+					position:relative;
+					
+					border-bottom: 1px solid #000;
+					}
+				#contenido-todo13{
+					height:60px;
+					width:90%;
+					margin-left:5%;
+					margin-top:5%;
+					/*border: 2px solid #333;*/
+					position:relative;
+					
+					border-bottom: 1px solid #000;
+					}
 				#calcular-rpm{
 					height:50px;
 					width:90%;
@@ -126,7 +196,14 @@
 					text-align:center;
 					margin-left:20%;
 					margin-top:-10%;
-					}	
+					}
+				.mas-menos-text6{
+					font-size:25px;
+					position:absolute;
+					text-align:center;
+					margin-left:20%;
+					margin-top:-10%;
+					}
 				.contenido-img{
 					width:30%;
 					height:100%;

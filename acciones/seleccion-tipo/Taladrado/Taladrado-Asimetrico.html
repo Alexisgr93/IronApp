@@ -307,6 +307,8 @@
     	<div class="inferior">
         	
         	<div id="scroll-tabla">
+				
+				
             	<div id="contenido-todo">
                     <div id="calcular-rpm">
                         <div class="contenido1" onclick="calculadora_open()" class="w3-overlay2" style="cursor:pointer" id="myOverlay">
@@ -327,7 +329,7 @@
                      </div>
                      <div id="CalcularRPM" class="contenido3">
                          <fieldset>
-                            <legend>Resultado de RPM</legend>
+                            <legend>Resultado de n (RPM)</legend>
                             <p class="calc resultado-rpm1" id="RPM123">RPM:</p>
                          </fieldset>
                      </div>                
@@ -344,11 +346,11 @@
                         <div class="menu-calculadora">
                             <fieldset>
                                 <legend>Calcular n (RPM)</legend>
-                                <label for="">Ingrese el diametro de corte:</label>
-                                <input type="number" id="Dc" placeholder="mm"></input>
+                                <label for="">Ingrese el valor de D<sub>c</sub>:</label>
+                                <input type="number" id="Dc" placeholder="Diametro de corte (mm)"></input>
                                 <br><br>
-                                <label for="">Ingrese la velocidad de corte:</label>
-                                <input type="number" id="Vc" placeholder="m/min"></input>
+                                <label for="">Ingrese el valor de V<sub>c</sub> la :</label>
+                                <input type="number" id="Vc" placeholder="velocidad de corte (m/min)"></input>
                                 <br>
                                 <input type="button" onclick="CalcularRPM()" value="Calucular">
                                 <br/>
@@ -356,9 +358,7 @@
                             
                             <p id="n"> Valor de n: </p>
                         </div>
-                        <script>
-						
-						</script>
+                        
                         <div class="mensaje">
                             <p>*Recuerdo que los valores podran ser visualizados en la pestaña mas (+) 
                             y tambien podran ser visualizados a partir de la 3ª pestaña de selectiva.</p>
@@ -404,11 +404,11 @@
                         <div class="menu-calculadora">
                             <fieldset>
                                 <legend>Calcular V<sub>c</sub></legend>
-                                <label for="">Ingrese el diametro de corte:</label>
-                                <input type="number" id="Dc8" placeholder="mm">
+                                <label for="">Ingrese el valor de D<sub>c</sub>:</label>
+                                <input type="number" id="Dc8" placeholder=" Diametro de corte(mm)">
                                 <br><br>
-                                <label for="">Ingrese n (RPM):</label>
-                                <input type="number" id="n1" placeholder="RPM (min)">
+                                <label for="">Ingrese el valor de n:</label>
+                                <input type="number" id="n1" placeholder="RPM">
                                 <br>
                                 <input type="button" onclick="CalucularVC();" value="Calucular">
                                 <br/>
@@ -463,11 +463,11 @@
                             <fieldset>
                             	<legend>Calcular V<sub>f</sub></legend>
                                 <div id="scroll-fieldset">
-                                <label for="">Ingrese f:</label>
+                                <label for="">Ingrese el valor de f:</label>
                                 <input type="text" id="ft" placeholder="Avance por rotacion (mm)">
                                 <br>
-                                <label for="">Ingrese n(RPM):</label>
-                                <input type="text" id="nt" placeholder="RPM (min)">
+                                <label for="">Ingrese el valor de n:</label>
+                                <input type="text" id="nt" placeholder="RPM">
                                 <br>
                                 <input type="button" onclick="CalcularTaladVF()" value="Calucular">
                                 <br/>
@@ -523,10 +523,10 @@
                             <fieldset>
                             	<legend>Calcular Q</legend>
                                 <div id="scroll-fieldset">
-                                <label for="">Ingrese vf:</label>
+                                <label for="">Ingrese el valor de v<sub>f</sub>:</label>
                                 <input type="number" id="Vf1" placeholder="Velocidad de avance (mm/min)">
                                 <br>
-                                <label for="">Ingrese D<sub>c</sub>:</label>
+                                <label for="">Ingrese el valor de D<sub>c</sub>:</label>
                                 <input type="number" id="Dc1" placeholder="Diametro de corte (mm)">
                                 <br>
                                 <input type="button" onclick="CalcularTalQ()" value="Calucular">
@@ -544,7 +544,7 @@
                           
                 </div>
                 
-                
+   
                 <div id="contenido-todo5">
                     <div id="calcular-rpm">
                         <div class="contenido1" onclick="calculadoraQ_open()" class="w3-overlay2" style="cursor:pointer" id="myOverlay6">
@@ -552,7 +552,7 @@
                                 <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
                             </div>
                             <div class="contenido-text">
-                                <div class="text-calculadora">Calcular H</div>
+                                <div class="text-calculadora">Calcular P<sub>mot</sub></div>
                             </div>
                         </div>
                         <div class="contenido2"  onClick="muestra_ocultaQ('CalcularQ')">
@@ -565,8 +565,8 @@
                      </div>
                      <div id="CalcularQ" class="contenido3">
                          <fieldset>
-                            <legend>Resultado de h</legend>
-                            <p class="calc resultado-rpm1" id="h12">H:</p>
+                            <legend>Resultado de P<sub>mot</sub></legend>
+                            <p class="calc resultado-rpm1" id="Pmot12">P<sub>mot</sub>:</p>
                          </fieldset>
                      </div>                
                 </div>
@@ -581,20 +581,23 @@
                     </div> 	
                         <div class="menu-calculadora">
                             <fieldset>
-                            	<legend>Calcular h</legend>
+                            	<legend>Calcular P<sub>mot</sub></legend>
                                 <div id="scroll-fieldset">
-                                <label for="">Ingrese f<sub>z</sub>:</label>
-                                <input type="number" id="fzt" placeholder="avance por diente (mm)">
+                                <label for="">Ingrese Q:</label>
+                                <input type="number" id="QPmot" placeholder="Volumen de arranque de viruta (cm^3/min)">
                                 <br>
-                                <label for="">Ingrese k:</label>
-                                <input type="number" id="kt" placeholder="Angulo de ataque (°)">
+                                <label for="">Ingrese k<sub>c1</sub>:</label>
+                                <input type="number" id="KcPmot" placeholder="Fuerza de corte especifica (N/mm^2)">
                                 <br>
-                                <input type="button" onclick="CalcularTalH()" value="Calucular">
+                                <label for="">Ingrese &eta;:</label>
+                                <input type="number" id="nPmot" placeholder="Rendimiento de Maquina entre 75 y 90">
+                                <br>
+                                <input type="button" onclick="CalcularTorPmot()" value="Calucular">
                                 <br/>
                                 </div>
                             </fieldset>
                             
-                            <p id="h"> Valor de h: </p>
+                            <p id="Pmot1"> Valor de P<sub>mot</sub>: </p>
                         </div>
                         
                         <div class="mensaje">
@@ -603,6 +606,259 @@
                         </div>
                           
                 </div>
+                
+                
+                <div id="contenido-todo6">
+                    <div id="calcular-rpm">
+                        <div class="contenido1" onclick="calculadoraB_open()" class="w3-overlay2" style="cursor:pointer" id="myOverlay7">
+                            <div class="contenido-img">
+                                <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
+                            </div>
+                            <div class="contenido-text">
+                                <div class="text-calculadora">Calcular M<sub>c</sub></div>
+                            </div>
+                        </div>
+                        <div class="contenido2"  onClick="muestra_ocultaB('CalcularB')">
+                            <div class="contenido-mas-menos">
+                                <div class="mas-menos">
+                                    <div class="mas-menos-text6" id="mas-menos-text6">+</div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div id="CalcularB" class="contenido3">
+                         <fieldset>
+                            <legend>Resultado de M<sub>c</sub></legend>
+                            <p class="calc resultado-rpm1" id="MC12">M<sub>c</sub>:</p>
+                         </fieldset>
+                     </div>                
+                </div>
+                <div onclick="calculadoraB_close()" style="cursor:pointer" id="myOverlay7">
+                </div>
+                
+                <div class="w3-sidebar2 w3-bar-block w3-animate-right" style="display:none;z-index:5" id="mySidebar7">
+                
+                    <div class="cajaCerrar">
+                        <a onClick="calculadoraB_close()">X
+                        </a>
+                    </div> 	
+                        <div class="menu-calculadora">
+                            <fieldset>
+                            	<legend>Calcular M<sub>c</sub></legend>
+                                <div id="scroll-fieldset">
+                                <label for="">Ingrese el valor de D<sub>c</sub>:</label>
+                                <input type="number" id="DCMC" placeholder="Diametro de corte (mm)">
+                                <br>
+                                <label for="">Ingrese el valor de K<sub>c</sub>:</label>
+                                <input type="number" id="KCMC" placeholder="Fuerza de corte especifica (N/mm^2)">
+                                <br>
+								<label for="">Ingrese el valor de f:</label>
+                                <input type="number" id="FMC" placeholder="Avance por rotacion (mm)">
+                                <br>
+                                <input type="button" onclick="CalcularTalMC()" value="Calucular">
+                                <br/>
+                                </div>
+                            </fieldset>
+                            
+                            <p id="MC1"> Valor de M<sub>c</sub>: </p>
+                        </div>
+                        
+                        <div class="mensaje">
+                            <p>*Recuerdo que los valores podran ser visualizados en la pestaña mas (+) 
+                            y tambien podran ser visualizados a partir de la 3ª pestaña de selectiva.</p>
+                        </div>
+                          
+                </div> 
+                
+                               
+                <div id="contenido-todo7">
+                    <div id="calcular-rpm">
+                        <div class="contenido1" onclick="calculadoraH_open()" class="w3-overlay2" style="cursor:pointer" id="myOverlay8">
+                            <div class="contenido-img">
+                                <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
+                            </div>
+                            <div class="contenido-text">
+                                <div class="text-calculadora">Calcular F<sub>f</sub></div>
+                            </div>
+                        </div>
+                        <div class="contenido2"  onClick="muestra_ocultaH('CalcularH')">
+                            <div class="contenido-mas-menos">
+                                <div class="mas-menos">
+                                    <div class="mas-menos-text6" id="mas-menos-text7">+</div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div id="CalcularH" class="contenido3">
+                         <fieldset>
+                            <legend>Resultado de F<sub>f</sub></legend>
+                            <p class="calc resultado-rpm1" id="FF12">F<sub>f</sub>:</p>
+                         </fieldset>
+                     </div>                
+                </div>
+                <div onclick="calculadoraH_close()" style="cursor:pointer" id="myOverlay8">
+                </div>
+                
+                <div class="w3-sidebar2 w3-bar-block w3-animate-right" style="display:none;z-index:5" id="mySidebar8">
+                
+                    <div class="cajaCerrar">
+                        <a onClick="calculadoraH_close()">X
+                        </a>
+                    </div> 	
+                        <div class="menu-calculadora">
+                            <fieldset>
+                            	<legend>Calcular F<sub>f</sub></legend>
+                                <div id="scroll-fieldset">
+                                <label for="">Ingrese el valor de D<sub>c</sub>:</label>
+                                <input type="number" id="DCFF" placeholder="Diametro de corte (mm)">
+                                <br>
+                                <label for="">Ingrese el valor de K<sub>c</sub>:</label>
+                                <input type="number" id="KCFF" placeholder="Fuerza de corte especifica (N/mm^2)">
+                                <br>
+								<label for="">Ingrese el valor de f:</label>
+                                <input type="number" id="FFF" placeholder="Avance por rotacion (mm)">
+                                <br>
+                                <input type="button" onclick="CalcularTalFF()" value="Calucular">
+                                <br/>
+                                </div>
+                            </fieldset>
+                            
+                            <p id="FF1"> Valor de F<sub>f</sub>: </p>
+                        </div>
+                        
+                        <div class="mensaje">
+                            <p>*Recuerdo que los valores podran ser visualizados en la pestaña mas (+) 
+                            y tambien podran ser visualizados a partir de la 3ª pestaña de selectiva.</p>
+                        </div>
+                          
+                </div>                
+
+
+                            
+                <div id="contenido-todo8">
+                    <div id="calcular-rpm">
+                        <div class="contenido1" onclick="calculadoraFc_open()" class="w3-overlay2" style="cursor:pointer" id="myOverlay9">
+                            <div class="contenido-img">
+                                <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
+                            </div>
+                            <div class="contenido-text">
+                                <div class="text-calculadora">Calcular K<sub>c</sub></div>
+                            </div>
+                        </div>
+                        <div class="contenido2"  onClick="muestra_ocultaFc('CalcularFc')">
+                            <div class="contenido-mas-menos">
+                                <div class="mas-menos">
+                                    <div class="mas-menos-text6" id="mas-menos-text8">+</div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div id="CalcularFc" class="contenido3">
+                         <fieldset>
+                            <legend>Resultado de K<sub>c</sub></legend>
+                            <p class="calc resultado-rpm1" id="KC12">K<sub>c</sub>:</p>
+                         </fieldset>
+                     </div>                
+                </div>
+                <div onclick="calculadoraFc_close()" style="cursor:pointer" id="myOverlay9">
+                </div>
+                
+                <div class="w3-sidebar2 w3-bar-block w3-animate-right" style="display:none;z-index:5" id="mySidebar9">
+                
+                    <div class="cajaCerrar">
+                        <a onClick="calculadoraFc_close()">X
+                        </a>
+                    </div> 	
+                        <div class="menu-calculadora">
+                            <fieldset>
+                            	<legend>Calcular K<sub>c</sub></legend>
+                                <div id="scroll-fieldset">
+                                <label for="">Ingrese el valor de k<sub>c1.1</sub>:</label>
+                                <input type="number" id="KCKC" placeholder="Fuerza de corte especifica (N/mm^2)">
+                                <br>
+                                <label for="">Ingrese el valor de h:</label>
+                                <input type="number" id="HKC" placeholder="Espesor de viruta (mm)">
+                                <br>
+                                <label for="">Ingrese el valor de m<sub>c</sub>:</label>
+                                <input type="number" id="MCKC" placeholder="Conicidad de la curva (Ver tabla)">
+                                <br>
+                                <input type="button" onclick="CalcularTalKC()" value="Calucular">
+                                <br/>
+                                </div>
+                            </fieldset>
+                            
+                            <p id="KC1"> Valor de K<sub>c</sub>: </p>
+                        </div>
+                        
+                        <div class="mensaje">
+                            <p>*Recuerdo que los valores podran ser visualizados en la pestaña mas (+) 
+                            y tambien podran ser visualizados a partir de la 3ª pestaña de selectiva.</p>
+                        </div>
+                          
+                </div>                  
+                
+       
+                <div id="contenido-todo9">
+                    <div id="calcular-rpm">
+                        <div class="contenido1" onclick="calculadoraPmot_open()" class="w3-overlay2" style="cursor:pointer" id="myOverlay10">
+                            <div class="contenido-img">
+                                <img src="../../../img/imagenes/Calculadora.png" class="boton-img">
+                            </div>
+                            <div class="contenido-text">
+                                <div class="text-calculadora">Calcular h</sub></div>
+                            </div>
+                        </div>
+                        <div class="contenido2"  onClick="muestra_ocultaPmot('CalcularPmot')">
+                            <div class="contenido-mas-menos">
+                                <div class="mas-menos">
+                                    <div class="mas-menos-text6" id="mas-menos-text9">+</div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div id="CalcularPmot" class="contenido3">
+                         <fieldset>
+                            <legend>Resultado de h</legend>
+                            <p class="calc resultado-rpm1" id="H12">h:</p>
+                         </fieldset>
+                     </div>                
+                </div>
+                <div onclick="calculadoraPmot_close()" style="cursor:pointer" id="myOverlay10">
+                </div>
+                
+                <div class="w3-sidebar2 w3-bar-block w3-animate-right" style="display:none;z-index:5" id="mySidebar10">
+                
+                    <div class="cajaCerrar">
+                        <a onClick="calculadoraPmot_close()">X
+                        </a>
+                    </div> 	
+                        <div class="menu-calculadora">
+                            <fieldset>
+                            	<legend>Calcular h</legend>
+                                <div id="scroll-fieldset">
+                                <label for="">Ingrese f<sub>z</sub>:</label>
+                                <input type="number" id="FZH" placeholder="Avance por diente (mm)">
+                                <br>
+                                <label for="">Ingrese k:</label>
+                                <input type="number" id="KH" placeholder="Angulo de ataque (°)">
+                                <br>
+                                <input type="button" onclick="CalcularTalH()" value="Calucular">
+                                <br/>
+                                </div>
+                            </fieldset>
+                            
+                            <p id="H1"> Valor de h: </p>
+                        </div>
+                        
+                        <div class="mensaje">
+                            <p>*Recuerdo que los valores podran ser visualizados en la pestaña mas (+) 
+                            y tambien podran ser visualizados a partir de la 3ª pestaña de selectiva.</p>
+                        </div>
+                          
+                </div>        
+                
+                
+
                 
                 
                 

@@ -19,10 +19,10 @@ function CalcularRPM()
 							
 				}
 				RPM123.innerHTML="n: " + RPM +" min<sup>-1</sup>";
-				RPM1234.innerHTML="RPM: " + RPM +" min<sup>-1</sup>";
-				DC123.innerHTML="D<sub>c</sub>: " + valor + " mm";
-				VC123.innerHTML="V<sub>c</sub>: " + valor1 + " m/min";
-				
+				//tabla
+				RPMTabla.innerHTML= RPM +" min<sup>-1</sup>";
+				DCTabla.innerHTML= valor + " mm";
+				VCTabla.innerHTML= valor1 + " m/min";
 						
 }
 				
@@ -42,10 +42,17 @@ function CalucularVC()
 					VC = Number(VC.toFixed(2));//muestra 2 decimales
 					VC8.innerHTML ="V<sub>c</sub>: " + VC +" m/min";
 				}
+				//tabla
+				RPMTabla.innerHTML = valor1 + " min<sup>-1</sup>";
+				DCTabla.innerHTML = valor + " mm";
+				VCTabla.innerHTML= VC +" m/min";
+				
+				
 				VC1.innerHTML= "V<sub>c</sub>: " + VC +" m/min";
 				VC123.innerHTML= "V<sub>c</sub>: " + VC +" m/min";
 				DC123.innerHTML="D<sub>c</sub>: " + valor + " mm";
 				RPM1234.innerHTML="RPM: " + valor1 + " min<sup>-1</sup>";
+				
 						
 }
 
@@ -149,13 +156,24 @@ function CalcularVfe(){
 					var Vfe= fz * n * z;
 						
 					Vfe = Number(Vfe.toFixed(2));//muestra 2 decimales
-					Vfe1.innerHTML ="V<sub>fe</sub>: " + Vfe +"mm/min";
+					Vfe1.innerHTML ="V<sub>fe</sub>: " + Vfe +" mm/min";
 				}
-				Vfe123.innerHTML = "V<sub>fe</sub>: " + Vfe +"mm/min";
-				vfe1234.innerHTML = "V<sub>fe</sub>: " + Vfe +"mm/min";
-				RPM1234.innerHTML="RPM: " + document.getElementById("n123").value +"min<sup>-1</sup>";
+				//tabla
+				VFETabla.innerHTML = Vfe +" mm/min";
+				FZTabla.innerHTML = valor +" mm";
+				ZTabla.innerHTML = valor1 +" diente";
+				RPMTabla.innerHTML = valor2 +" min<sup>-1</sup>";
+				
+				
+				Vfe123.innerHTML = "V<sub>fe</sub>: " + Vfe +" mm/min";
+				vfe1234.innerHTML = "V<sub>fe</sub>: " + Vfe +" mm/min";
+				RPM1234.innerHTML="RPM: " + document.getElementById("n123").value +" min<sup>-1</sup>";
 				Z123.innerHTML= "Z: " + document.getElementById("z").value;
-				fz123.innerHTML= "f<sub>z</sub>: " + document.getElementById("fz").value + "mm";
+				fz123.innerHTML= "f<sub>z</sub>: " + document.getElementById("fz").value + " mm";
+				VFETabla.innerHTML = Vfe +" mm/min";
+				FZTabla.innerHTML = valor +" mm";
+				ZTabla.innerHTML = valor1 +" diente";
+				RPMTabla.innerHTML = valor2 +" min<sup>-1</sup>";
 
 }
 
@@ -175,13 +193,21 @@ function CalcularRoscadoVF(){
 					var Vf  = (Vfe *(Dn - Dc))/ Dn;
 						
 					Vf = Number(Vf.toFixed(2));//muestra 2 decimales
-					Vf1.innerHTML ="v<sub>f</sub>: " + Vf +"mm/min";
+					Vf1.innerHTML ="v<sub>f</sub>: " + Vf +" mm/min";
 				}
-				Vf12.innerHTML = "v<sub>f</sub>: " + Vf +"mm/min";
-				vf1234.innerHTML = "v<sub>f</sub>: " + Vf +"mm/min";
-				vfe1234.innerHTML = "V<sub>fe</sub>: " + Vfe +"mm/min";
-				Dc123.innerHTML = "D<sub>c</sub>: " + Dc +"mm";
-				Dn123.innerHTML = "D<sub>n</sub>: " + Dn +"mm";
+				//tabla
+				VFTabla.innerHTML = Vf +" mm/min";
+				VFETabla.innerHTML = Vfe +" mm/min";
+				DNTabla.innerHTML = Dn + " mm";
+				DCTabla.innerHTML = Dc + "mm";
+				
+				
+				
+				Vf12.innerHTML = "v<sub>f</sub>: " + Vf +" mm/min";
+				vf1234.innerHTML = "v<sub>f</sub>: " + Vf +" mm/min";
+				vfe1234.innerHTML = "V<sub>fe</sub>: " + Vfe +" mm/min";
+				Dc123.innerHTML = "D<sub>c</sub>: " + Dc +" mm";
+				Dn123.innerHTML = "D<sub>n</sub>: " + Dn +" mm";
 	
 }
 
@@ -250,11 +276,13 @@ function CalucularRoscadoMachLamKC()
 					var lf = document.getElementById("lf").value;
 					var mc = document.getElementById("mc").value;
 	
-					var kc = kc1 * (((p*p)/(2*z*lf)) * mc);
-					
+					var kc = (2*z*lf);  //Math.pow(base, exponente)
+						kc =  Math.pow(kc, mc);
+						kc = (kc1 * (p*p)) / kc;
+						
 						
 					kc = Number(kc.toFixed(2));//muestra 2 decimales
-					Kc11.innerHTML ="K<sub>c</sub>: " + kc +"m/min";
+					Kc11.innerHTML ="K<sub>c</sub>: " + kc +"N/mm<sup>2</sup>";
 				}
 				Kc12.innerHTML= "K<sub>c</sub>: " + kc +"m/min";
 				
@@ -360,7 +388,7 @@ function CalcularTalQ()
 									
 }
 
-CalcularTalH()//revisar!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+CalcularTalH()
 {
 	valor = document.getElementById("fzt").value;
 	valor1 = document.getElementById("kt").value;
@@ -421,8 +449,444 @@ function CalcularTorA()
 	
 					var A = ft * apt;
 					A = Number(A.toFixed(3));//muestra 3 decimales
-					A1.innerHTML = "A: " + A +"mm<sup>2</sup>/min";
+					A1.innerHTML = "A: " + A +"mm<sup>2</sup>";
 				}
-				A12.innerHTML= "A: " + A +"mm<sup>2</sup>/min";
+				A12.innerHTML= "A: " + A +"mm<sup>2</sup>";
 									
+}
+
+
+
+function CalcularTorB()
+{
+	valor = document.getElementById("ktb").value;
+	valor1 = document.getElementById("aptb").value;
+		if( valor == "" || valor1== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var ap = document.getElementById("aptb").value;
+					var k = document.getElementById("ktb").value;
+					
+	
+					var b = ap/(Math.sin(k));
+					b = Number(b.toFixed(3));//muestra 3 decimales
+					B1.innerHTML = "b: " + b +"mm";
+				}
+				B12.innerHTML= "b: " + b +"mm";
+}
+	
+function CalcularTorH()
+{
+	valor = document.getElementById("kth").value;
+	valor1 = document.getElementById("fth").value;
+		if( valor == "" || valor1== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var f = document.getElementById("fth").value;
+					var k = document.getElementById("kth").value;
+					
+	
+					var h = f/(Math.sin(k));
+					h = Number(h.toFixed(3));//muestra 3 decimales
+					H1.innerHTML = "h: " + h +"mm";
+				}
+				H12.innerHTML= "h: " + h +"mm";
+}
+
+
+function CalcularTorFc()
+{
+	valor = document.getElementById("AFc").value;
+	valor1 = document.getElementById("KcFc").value;
+	valor2 = document.getElementById("HFc").value;
+	valor3 = document.getElementById("MCFc").value;
+		if( valor == "" || valor1== "" || valor2 == "" || valor3== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var A = document.getElementById("AFc").value;
+					var Kc = document.getElementById("KcFc").value;
+					var h = document.getElementById("HFc").value;
+					var mc = document.getElementById("MCFc").value;
+					
+	
+					var Fc = A*Kc*(Math.pow(h, mc));//Math.pow(base, exponente)
+					Fc = Number(Fc.toFixed(3));//muestra 3 decimales
+					FC1.innerHTML = "Fc: " + Fc +"N";
+				}
+				FC12.innerHTML= "Fc: " + Fc +"N";
+}
+
+function CalcularTorPmot()
+{
+	valor = document.getElementById("QPmot").value;
+	valor1 = document.getElementById("KcPmot").value;
+	valor2 = document.getElementById("nPmot").value;
+
+		if( valor == "" || valor1== "" || valor2 == "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var Q  = document.getElementById("QPmot").value;
+					var Kc = document.getElementById("KcPmot").value;
+					var n  = document.getElementById("nPmot").value;
+					
+	
+					var Pmot = (Q*Kc)/(6000*n)
+					Pmot = Number(Pmot.toFixed(3));//muestra 3 decimales
+					Pmot1.innerHTML = "P<sub>mot</sub>: " + Pmot +" KW";
+				}
+				Pmot12.innerHTML= "P<sub>mot</sub>: " + Pmot +" KW";
+				PmotTabla.innerHTML= Pmot +" KW";
+				QTabla.innerHTML= valor + " cm<sup>3</sup>/min";
+				KC11Tabla.innerHTML= valor1 + " N/mm<sup>2</sup>";
+				ETATabla.innerHTML= valor2;
+}
+
+function CalcularTorTH()
+{
+	valor = document.getElementById("LMTH").value;
+	valor1 = document.getElementById("FTH").value;
+	valor2 = document.getElementById("NTH").value;
+
+		if( valor == "" || valor1== "" || valor2 == "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var lm  = document.getElementById("LMTH").value;
+					var f = document.getElementById("FTH").value;
+					var n  = document.getElementById("NTH").value;
+					
+	
+					var th = (lm)/(f*n)
+					th = Number(th.toFixed(3));//muestra 3 decimales
+					TH1.innerHTML = "t<sub>h</sub>: " + th +"min";
+				}
+				TH12.innerHTML= "t<sub>h</sub>: " + th +"min";
+}
+
+function CalcularTorRMAX()
+{
+	valor = document.getElementById("FRMAX").value;
+	valor1 = document.getElementById("RRMAX").value;
+
+
+		if( valor == "" || valor1== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var f  = document.getElementById("FRMAX").value;
+					var r = document.getElementById("RRMAX").value;					
+	
+					var Rmax = ((f*f)/(8*r))*1000
+					Rmax = Number(Rmax.toFixed(3));//muestra 3 decimales
+					RMAX1.innerHTML = "R<sub>max</sub>: " + Rmax +"&mu;m";
+				}
+				RMAX12.innerHTML= "R<sub>max</sub>: " + Rmax +"&mu;m";
+}
+
+function CalcularTorLC()
+{
+	valor = document.getElementById("DCLC").value;
+	valor1 = document.getElementById("LMLC").value;
+	valor2 = document.getElementById("FLC").value;
+
+
+		if( valor == "" || valor1== "" || valor2== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var Dc  = document.getElementById("DCLC").value;
+					var lm = document.getElementById("LMLC").value;	
+					var f = document.getElementById("FLC").value;				
+	
+					var lc = ((Dc*3.14))/1000
+						lc = lc *(lm/f)
+					lc = Number(lc.toFixed(3));//muestra 3 decimales
+					LC1.innerHTML = "l<sub>c</sub>: " + lc +"m";
+				}
+				LC12.innerHTML= "l<sub>c</sub>: " + lc +"m";
+}
+
+function CalcularTalMC()
+{
+	valor = document.getElementById("DCMC").value;
+	valor1 = document.getElementById("KCMC").value;
+	valor2 = document.getElementById("FMC").value;
+
+
+		if( valor == "" || valor1== "" || valor2== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var Dc  = document.getElementById("DCMC").value;
+					var kc = document.getElementById("KCMC").value;	
+					var f = document.getElementById("FMC").value;				
+	
+					var Mc = ((Dc*Dc))* kc * f;
+						Mc = Mc / 8000;
+					Mc = Number(Mc.toFixed(3));//muestra 3 decimales
+					MC1.innerHTML = "M<sub>c</sub>: " + Mc +"Nm";
+				}
+				MC12.innerHTML= "M<sub>c</sub>: " + Mc +"Nm";
+}
+
+function CalcularTalFF()
+{
+	valor = document.getElementById("DCFF").value;
+	valor1 = document.getElementById("KCFF").value;
+	valor2 = document.getElementById("FFF").value;
+
+
+		if( valor == "" || valor1== "" || valor2== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var Dc  = document.getElementById("DCFF").value;
+					var kc = document.getElementById("KCFF").value;	
+					var f = document.getElementById("FFF").value;				
+	
+					var Ff = (Dc* kc * f)/2;
+						Ff = Ff * 0.63;
+					Ff = Number(Ff.toFixed(3));//muestra 3 decimales
+					FF1.innerHTML = "F<sub>f</sub>: " + Ff +"N";
+				}
+				FF12.innerHTML= "F<sub>f</sub>: " + Ff +"N";
+}
+
+function CalcularTalKC()
+{
+	valor = document.getElementById("KCKC").value;
+	valor1 = document.getElementById("HKC").value;
+	valor2 = document.getElementById("MCKC").value;
+
+
+		if( valor == "" || valor1== "" || valor2== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var Kc1  = document.getElementById("KCKC").value;
+					var h = document.getElementById("HKC").value;	
+					var mc = document.getElementById("MCKC").value;				
+	
+					var Kc = Kc1 / (Math.pow(h, mc));
+						
+					Kc = Number(Kc.toFixed(3));//muestra 3 decimales (Math.pow(h, mc))
+					KC1.innerHTML = "K<sub>c</sub>: " + Kc +"N/mm";
+				}
+				KC12.innerHTML= "K<sub>c</sub>: " + Kc +"N/mm<sup>2<sup>";
+}
+
+function CalcularTalH()
+{
+	valor = document.getElementById("FZH").value;
+	valor1 = document.getElementById("KH").value;
+		if( valor == "" || valor1== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var fz = document.getElementById("FZH").value;
+					var k = document.getElementById("KH").value;
+					
+	
+					var h = fz/(Math.sin(k));
+					h = Number(h.toFixed(3));//muestra 3 decimales
+					H1.innerHTML = "h: " + h +"mm";
+				}
+				H12.innerHTML= "h: " + h +"mm";
+}
+
+function CalucularRoscadoMachRosP()
+{
+	valor = document.getElementById("MDP").value;
+	valor1 = document.getElementById("RPMP").value;
+	valor2 = document.getElementById("ETAP").value;
+
+
+		if( valor == "" || valor1== "" || valor2== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var Md  = document.getElementById("MDP").value;
+					var RPM = document.getElementById("RPMP").value;	
+					var eta = document.getElementById("ETAP").value;				
+	
+					var P = (Md * RPM)/(9500 * eta);
+						
+					P = Number(P.toFixed(3));//muestra 3 decimales (Math.pow(h, mc))
+					P1.innerHTML = "P: " + P +"KW";
+				}
+				P12.innerHTML= "P: " + P +"KW";
+}
+
+
+function CalcularFresVF()
+{
+	valor = document.getElementById("FZVF").value;
+	valor1 = document.getElementById("ZVF").value;
+	valor2 = document.getElementById("NVF").value;
+
+
+		if( valor == "" || valor1== "" || valor2== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var fz  = document.getElementById("FZVF").value;
+					var z = document.getElementById("ZVF").value;	
+					var n = document.getElementById("NVF").value;				
+	
+					var vf = fz * z * n;
+						
+					vf = Number(vf.toFixed(3));//muestra 3 decimales (Math.pow(h, mc))
+					VF1.innerHTML = "v<sub>f</sub>: " + vf +" mm/min";
+				}
+				VF12.innerHTML= "v<sub>f</sub>: " + vf +" mm/min";
+				VFTabla.innerHTML = vf +" mm/min";
+				FZTabla.innerHTML= valor +" mm";
+				ZTabla.innerHTML= valor1 +" dientes";
+				RPMTabla.innerHTML = valor2 +" min<sup>-1</sup>";
+				
+}
+
+function CalcularFresFZ()
+{
+	valor = document.getElementById("VFFZ").value;
+	valor1 = document.getElementById("ZFZ").value;
+	valor2 = document.getElementById("NFZ").value;
+
+
+		if( valor == "" || valor1== "" || valor2== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var vf  = document.getElementById("VFFZ").value;
+					var z = document.getElementById("ZFZ").value;	
+					var n = document.getElementById("NFZ").value;				
+	
+					var fz = vf/ (z * n);
+						
+					fz = Number(fz.toFixed(3));//muestra 3 decimales (Math.pow(h, mc))
+					FZ1.innerHTML = "f<sub>z</sub>: " + fz +" mm";
+				}
+				FZ12.innerHTML= "f<sub>z</sub>: " + fz +" mm";
+				FZTabla.innerHTML= fz +" mm";
+				VFTabla.innerHTML= valor +" mm/min";
+				ZTabla.innerHTML= valor1 +" dientes";
+				RPMTabla.innerHTML= valor2 +" min<sup>-1</sup>";
+				
+}
+
+function CalcularFresQ()
+{
+	valor = document.getElementById("AEQ").value;
+	valor1 = document.getElementById("APQ").value;
+	valor2 = document.getElementById("VFQ").value;
+
+
+		if( valor == "" || valor1== "" || valor2== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var ae  = document.getElementById("AEQ").value;
+					var ap = document.getElementById("APQ").value;	
+					var vf = document.getElementById("VFQ").value;				
+	
+					var q = (ae * ap * vf)/100;
+						
+					q = Number(q.toFixed(3));//muestra 3 decimales (Math.pow(h, mc))
+					Q1.innerHTML = "Q: " + q +" cm<sup>3</sup>/min";
+				}
+				Q12.innerHTML= "Q: " + q +" cm<sup>3</sup>/min";
+				QTabla.innerHTML= q +" cm<sup>3</sup>/min";
+				AETabla.innerHTML= valor + " mm";
+				APTabla.innerHTML= valor1+ " mm";
+				VFTabla.innerHTML= valor2+ " mm/min";
+}
+
+
+function CalcularFresFI()
+{
+	valor = document.getElementById("AEFI").value;
+	valor1 = document.getElementById("DCFI").value;
+
+
+		if( valor == "" || valor1== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var ae  = document.getElementById("AEFI").value;
+					var dc = document.getElementById("DCFI").value;					
+	
+					var fi = ae / dc;
+						fi = Math.asin(fi);//arco seno
+						fi = fi * (180/Math.PI);// devuelve el valor en grados
+						fi = 2 * fi;
+					
+					fi = Number(fi.toFixed(3));//muestra 3 decimales
+					FI1.innerHTML = "&phi;<sub>s</sub>: " + fi +"°";
+				}
+				FI12.innerHTML= "&phi;<sub>s</sub>: " + fi +"°";
+				FICTabla.innerHTML= fi +"°";
+				AETabla.innerHTML= valor + " mm";
+				DCTabla.innerHTML= valor1 + " mm";
+}
+
+function CalcularFresFINOCEN()
+{
+	valor = document.getElementById("AEFINC").value;
+	valor1 = document.getElementById("DCFINC").value;
+
+
+		if( valor == "" || valor1== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var ae  = document.getElementById("AEFINC").value;
+					var dc = document.getElementById("DCFINC").value;					
+	
+					var fi = ae -  (dc / 2);
+						fi = fi / (dc / 2);
+						fi = Math.asin(fi);
+						fi = fi * (180/Math.PI);
+						fi = 90 + fi;
+					
+					fi = Number(fi.toFixed(3));//muestra 3 decimales
+					FINC1.innerHTML = "&phi;<sub>s</sub>: " + fi +"°";
+				}
+				FINC12.innerHTML= "&phi;<sub>s</sub>: " + fi +"°";
+				FINCTabla.innerHTML= fi +"°";
+				AETabla.innerHTML= valor + " mm";
+				DCTabla.innerHTML= valor1 + " mm";
+}
+
+
+function CalcularFresHM()
+{
+	valor = document.getElementById("FZHM").value;
+	valor1 = document.getElementById("AEHM").value;
+	valor2 = document.getElementById("DCHM").value;
+
+
+		if( valor == "" || valor1== "" || valor2== "") {
+  			alert('Completar todos los campos');
+			}else
+   				{
+					var fz  = document.getElementById("FZHM").value;
+					var ae = document.getElementById("AEHM").value;	
+					var dc = document.getElementById("DCHM").value;				
+	
+					var hm = ae / dc;
+						hm = Math.sqrt(hm);
+						hm = fz * hm;
+						
+					hm = Number(hm.toFixed(3));//muestra 3 decimales (Math.pow(h, mc))
+					HM1.innerHTML = "h<sub>m</sub>: " + hm +" mm"; // raiz Math.sqrt(x)
+				}
+				HM12.innerHTML= "h<sub>m</sub>: " + hm +" mm";
+				HMTabla.innerHTML= hm + " mm";
+				FZTabla.innerHTML= valor + " mm";
+				AETabla.innerHTML= valor1 + " mm";
+				DCTabla.innerHTML= valor2 + " mm";
 }

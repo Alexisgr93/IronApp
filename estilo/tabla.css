@@ -1,3 +1,4 @@
+
 .superior{
 	height:20%;
 	position:relative;
@@ -10,16 +11,18 @@
 	position:relative;
 	}
 	
-
-	
-	
 	
 .tabla{
-	text-align: center;
+	text-align: left;
 	position: absolute;
 	margin-top: 0%;
 	width: 100%;
+	font-size:14px;
 	}
+.colorTabla1:hover {
+	border-color:#000;
+    color:#093;
+}
 
 input{
 	border: rgba(0,255,0,1);
@@ -186,3 +189,69 @@ input{
 .H{
 	background-color:#EFF3F6;
 	}
+
+
+
+
+
+
+/*Tabla resultados*/
+.w3-TablaRes{
+	display:block;
+	height:78%; 
+	bottom: 10%;
+	width:100%;
+	background-color:#FFF;
+	background-repeat: repeat;
+	position:fixed!important;
+	z-index:1;
+	color:#FFF;/*color del texto*/
+	text-decoration:none;
+
+
+}
+.scrollTablaRes{
+	overflow-y: scroll;
+	height: 80%;
+	width:100%;
+}
+
+.calc-cerrar{
+	height:10%;
+	background-color:#900;
+	border-color:#dd5;
+	border-top-left-radius:.4em;
+	border-top-right-radius:.4em;
+}
+.calc-cerrar a{
+	margin-left:30%;
+	position:absolute;
+	}
+.calc-cerrar2{
+	height:10%;
+	background-color:#900;
+	border-color:#dd5;
+	border-bottom-left-radius:.4em;
+	border-bottom-right-radius:.4em;
+}
+.calc-cerrar2 a{
+	margin-left:30%;
+	position:absolute;}
+
+	
+.tablaResultados{
+  background: #34495E;
+
+  overflow: hidden;
+  border:#dd5;
+}
+.calc a{
+	color:#dd5;}
+.columna1 a{
+	color:#dd5;}
+.columna2 a{
+	color:#FFF;}
+.tablaResultados tr {
+    border-top: 1px solid #dd5;
+    border-bottom: 1px solid #dd5;
+  }

@@ -43,3 +43,70 @@ function calculadoraQ_close() {
      document.getElementById("mySidebar6").style.display = "none";
 
 }
+
+function calculadoraB_open() {
+   	document.getElementById("mySidebar7").style.display = "block";
+	
+}
+function calculadoraB_close() {
+     document.getElementById("mySidebar7").style.display = "none";
+
+}
+
+
+function calculadoraH_open() {
+   	document.getElementById("mySidebar8").style.display = "block";
+	
+}
+function calculadoraH_close() {
+     document.getElementById("mySidebar8").style.display = "none";
+
+}
+
+function calculadoraFc_open() {
+   	document.getElementById("mySidebar9").style.display = "block";
+	
+}
+function calculadoraFc_close() {
+     document.getElementById("mySidebar9").style.display = "none";
+
+}
+
+
+
+function calculadoraPmot_open() {
+   	document.getElementById("mySidebar10").style.display = "block";
+	
+}
+function calculadoraPmot_close() {
+     document.getElementById("mySidebar10").style.display = "none";
+
+}
+
+
+function calculadoraTH_open() {
+   	document.getElementById("mySidebar11").style.display = "block";
+	
+}
+function calculadoraTH_close() {
+     document.getElementById("mySidebar11").style.display = "none";
+
+}
+
+function calculadoraRMAX_open() {
+   	document.getElementById("mySidebar12").style.display = "block";
+	
+}
+function calculadoraRMAX_close() {
+     document.getElementById("mySidebar12").style.display = "none";
+
+}
+
+function calculadoraLC_open() {
+   	document.getElementById("mySidebar13").style.display = "block";
+	
+}
+function calculadoraLC_close() {
+     document.getElementById("mySidebar13").style.display = "none";
+
+}

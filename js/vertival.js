@@ -110,7 +110,14 @@ function myFunction6(){
 
 
 
-
+function TablaResultados_open() {
+    document.getElementById("TablaRes").style.display = "block";
+    document.getElementById("TablaResOver").style.display = "block";
+}
+function TablaResultados_close() {
+    document.getElementById("TablaRes").style.display = "none";
+    document.getElementById("TablaResOver").style.display = "none";
+}
 
 
 

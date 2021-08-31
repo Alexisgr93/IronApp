@@ -38,7 +38,9 @@ function datos(){
 
 						
 				};
-				
+
+
+			
  (function (){
 	var content = document.getElementById("geolocation-test");
 
