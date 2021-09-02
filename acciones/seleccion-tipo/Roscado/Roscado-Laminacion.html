@@ -122,51 +122,9 @@
                     <div class="scroll-calc">
                 	
                     	<div class="numbertext">3 / 3</div>
-                        
-                        <table class="tabla" width="100%" border="1px" bordercolor="#333333">
-                        	<tr>
-                            	<td>
-                                	<div class="calc" id="DN123">DN: </div>
-                                </td>
-                                <td>
-                                	<div class="calc" id="VC123">Vc: </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="calc" id="RPM1234">RPM: </div>
-                            	</td>
-                                <td>
-                               		<div class="calc" id="vfe1234">Vfe: </div>
-                                    
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="calc" id="fz123">fz: </div>
-                                </td>
-                                <td>
-                                	<div class="calc" id="Z123">Z: </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                	<div class="calc" id="vf1234">vf: </div>
-                                </td>
-                                <td>
-                               		<div class="calc" id="Dn123">Dn: </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                	<div class="calc" id="Dc123">Dc: </div>
-                                </td>
-                            </tr>
-                            
-                        </table>
-                  		
-                        <div class="text">Caption Three</div>
-                  	
+                        <img onClick="TablaResultados_open()" id="grande" src="../../../img/imagenes/Material/SM.png">
+                        <div class="text" onClick="TablaResultados_open()">Caption Three</div>
+                  		</img>                  	
                     </div>
                 </div>
                 
@@ -174,6 +132,114 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 
              </div>
+             <div class="w3-overlay1" onclick="TablaResultados_close()" style="cursor:pointer" id="TablaResOver">
+            </div>
+            
+            <div class="w3-TablaRes w3-bar-block w3-animate-bottom" style="display:none;z-index:5" id="TablaRes">
+            	<div class="calc-cerrar" onClick="TablaResultados_close()"><a>CERRAR</a></div>
+					<div class="scrollTablaRes">
+            			<table class="tablaResultados" width="100%" cellspacing="0" border="1px solid">
+							<tr>
+                            	<td>
+                                	<div class="calc"><a>Info</a></div>
+                                </td>
+                                <td>
+                                	<div class="calc"><a>Resultados</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="columna1"><a>RPM</a></div>
+                            	</td>
+                                <td>
+                                    <div class="columna2"><a id="RPMTabla">Resolver</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="columna1"><a>D<sub>n</sub></a></div>
+                                </td>
+                                <td>
+                                    <div class="columna2"><a id="DNTabla1">Resolver</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="columna1"><a>v<sub>c</sub></a></div>
+                                </td>
+                                <td>
+                                    <div class="columna2"><a id="VCTabla">Resolver</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="columna1"><a>K<sub>c</sub></a></div>
+                                </td>
+                                <td>
+                                    <div class="columna2"><a id="KCTabla">Resolver</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="columna1"><a>K<sub>c1.1</sub></a></div>
+                                </td>
+                                <td>
+                                    <div class="columna2"><a id="KC11Tabla">Resolver</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="columna1"><a>P</a></div>
+                                </td>
+                                <td>
+                                    <div class="columna2"><a id="PTabla">Resolver</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="columna1"><a>Z</a></div>
+                                </td>
+                                <td>
+                                    <div class="columna2"><a id="Z1Tabla">Resolver</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="columna1"><a>L<sub>f</sub></a></div>
+                                </td>
+                                <td>
+                                    <div class="columna2"><a id="LFTabla">Resolver</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="columna1"><a>mc</a></div>
+                                </td>
+                                <td>
+                                    <div class="columna2"><a id="MCTabla">Resolver</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="columna1"><a>M<sub>d</sub></a></div>
+                                </td>
+                                <td>
+                                    <div class="columna2"><a id="MDTabla">Resolver</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="columna1"><a>L<sub>c</sub></a></div>
+                                </td>
+                                <td>
+                                    <div class="columna2"><a id="LCTabla">Resolver</a></div>
+                                </td>
+                            </tr>
+                        </table>
+                     </div>
+                     <div class="calc-cerrar2" onClick="TablaResultados_close()"><a>CERRAR</a></div>
+             	
+            </div>
             
         
             <div class="w3-overlay1" onclick="material_close()" style="cursor:pointer" id="myOverlay1">
@@ -465,7 +531,7 @@
                             	<legend>Calcular K<sub>c</sub></legend>
                                 <div id="scroll-fieldset">
                                 <label for="">Ingrese el valor de K<sub>c1.1</sub>:</label>
-                                <input type="text" id="kc1" placeholder="Fuerza de corte especifica (Tabla) (N/mm2)">
+                                <input type="text" id="kc1" placeholder="Fuerza de corte especifica (Tabla) (N/mm^2)">
                                 <br>
                                 <label for="">Ingrese el valor de P:</label>
                                 <input type="text" id="p" placeholder="Paso de rosca (mm)">
@@ -534,7 +600,7 @@
                             	<legend>Calcular M<sub>d</sub></legend>
                                 <div id="scroll-fieldset">
                                 <label for="">Ingrese el valor de K<sub>c</sub>:</label>
-                                <input type="number" id="kc9" placeholder="Fuerza de corte especifica (N/mm2)">
+                                <input type="number" id="kc9" placeholder="Fuerza de corte especifica (N/mm^2)">
                                 <br>
                                 <label for="">Ingrese el valor de D<sub>N</sub>:</label>
                                 <input type="number" id="Dn9" placeholder="Diametro nominal de rosca (mm)">

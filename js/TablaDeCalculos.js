@@ -225,13 +225,19 @@ function CalcularRoscadoMachLamRPM()
 					var RPM= (1000 * Vc)/(3.14 * DN);
 							
 					RPM = Number(RPM.toFixed(2));//muestra 2 decimales
-					n.innerHTML ="n: " + RPM +"min<sup>-1</sup>";
+					n.innerHTML ="n: " + RPM +" min<sup>-1</sup>";
 							
 				}
-				RPM123.innerHTML="n: " + RPM +"min<sup>-1</sup>";
-				RPM1234.innerHTML="RPM: " + RPM +"min<sup>-1</sup>";
-				DN123.innerHTML="D<sub>N</sub>: " + document.getElementById("num").value + "mm";
-				VC123.innerHTML="V<sub>c</sub>: " + document.getElementById("num1").value + "m/min";
+				DNTabla1.innerHTML = DN + " mm";
+				RPMTabla.innerHTML = RPM +" min<sup>-1</sup>";
+				
+				
+				VCTabla.innerHTML = Vc + " m/min";
+				
+				RPM123.innerHTML="n: " + RPM +" min<sup>-1</sup>";
+				RPM1234.innerHTML="RPM: " + RPM +" min<sup>-1</sup>";
+				DN123.innerHTML="D<sub>N</sub>: " + document.getElementById("num").value + " mm";
+				VC123.innerHTML="V<sub>c</sub>: " + document.getElementById("num1").value + " m/min";
 				
 						
 }
@@ -249,12 +255,17 @@ function CalucularRoscadoMachLamVC()
 					var VC= (DN * 3.14 * n)/1000;
 						
 					VC = Number(VC.toFixed(2));//muestra 2 decimales
-					VC8.innerHTML ="V<sub>c</sub>: " + VC +"m/min";
+					VC8.innerHTML ="V<sub>c</sub>: " + VC + "m/min";
 				}
-				VC1.innerHTML= "V<sub>c</sub>: " + VC +"m/min";
-				VC123.innerHTML= "V<sub>c</sub>: " + VC +"m/min";
-				DN123.innerHTML="D<sub>N</sub>: " + document.getElementById("DN").value + "mm";
-				RPM1234.innerHTML="RPM: " + document.getElementById("n1").value +"min<sup>-1</sup>";
+				
+				DNTabla1.innerHTML = DN + " mm";
+				RPMTabla.innerHTML = n +" min<sup>-1</sup>";
+				VCTabla.innerHTML = VC +" m/min";
+				
+				VC1.innerHTML= "V<sub>c</sub>: " + VC +" m/min";
+				VC123.innerHTML= "V<sub>c</sub>: " + VC +" m/min";
+				DN123.innerHTML="D<sub>N</sub>: " + document.getElementById("DN").value + " mm";
+				RPM1234.innerHTML="RPM: " + document.getElementById("n1").value +" min<sup>-1</sup>";
 						
 }
 
@@ -282,9 +293,19 @@ function CalucularRoscadoMachLamKC()
 						
 						
 					kc = Number(kc.toFixed(2));//muestra 2 decimales
-					Kc11.innerHTML ="K<sub>c</sub>: " + kc +"N/mm<sup>2</sup>";
+					Kc11.innerHTML ="K<sub>c</sub>: " + kc +" N/mm<sup>2</sup>";
 				}
-				Kc12.innerHTML= "K<sub>c</sub>: " + kc +"m/min";
+				KCTabla.innerHTML = kc +" N/mm<sup>2</sup>";
+				KC11Tabla.innerHTML = kc1 +" N/mm<sup>2</sup>";
+				PTabla.innerHTML = p + " mm";
+				Z1Tabla.innerHTML = z;
+				LFTabla.innerHTML = lf + " mm";
+				MCTabla.innerHTML = mc;
+				
+				
+				
+				
+				Kc12.innerHTML= "K<sub>c</sub>: " + kc +" m/min";
 				
 						
 }
@@ -309,9 +330,17 @@ function CalucularRoscadoMachLamMd()
 					Md = Md * ((lc/Dn)*0.15)
 						
 					Md = Number(Md.toFixed(2));//muestra 2 decimales
-					Md1.innerHTML ="M<sub>d</sub>: " + Md +"Nm";
+					Md1.innerHTML ="M<sub>d</sub>: " + Md +" Nm";
 				}
-				Md12.innerHTML= "M<sub>d</sub>: " + Md +"Nm";
+				MDTabla.innerHTML =  Md +" Nm";
+				KCTabla.innerHTML =  kc +" N/mm<sup>2</sup>";
+				DNTabla1.innerHTML =  Dn +" mm";
+				PTabla.innerHTML =  p +" mm";
+				LCTabla.innerHTML =  lc +" mm";
+				
+				
+				
+				Md12.innerHTML= "M<sub>d</sub>: " + Md +" Nm";
 				
 						
 }
@@ -341,9 +370,18 @@ function CalucularRoscadoMachRosMd()
 					Md = Md	* (1.12-(y9/100))
 						
 					Md = Number(Md.toFixed(2));//muestra 2 decimales
-					Md1.innerHTML ="M<sub>d</sub>: " + Md +"Nm";
+					Md1.innerHTML ="M<sub>d</sub>: " + Md +" Nm";
 				}
-				Md12.innerHTML= "M<sub>d</sub>: " + Md +"Nm";
+				MDTabla.innerHTML = Md +" Nm";
+				KCTabla.innerHTML = kc + " N/mm<sup>2</sup>";
+				DNTabla1.innerHTML = Dn + " mm";
+				PTabla.innerHTML = p;
+				LCTabla.innerHTML = lc + " mm";
+				GAMMATabla.innerHTML = g9 + " °";
+				DELTATabla.innerHTML = y9;
+				
+				
+				Md12.innerHTML= "M<sub>d</sub>: " + Md +" Nm";
 									
 }
 
@@ -362,9 +400,13 @@ function CalcularTaladVF()
 	
 					var Vf = ft * nt;
 					Vf = Number(Vf.toFixed(2));//muestra 2 decimales
-					VF1.innerHTML = "V<sub>f</sub>: " + Vf +"mm/min";
+					VF1.innerHTML = "V<sub>f</sub>: " + Vf +" mm/min";
 				}
-				VF123.innerHTML= "V<sub>f</sub>: " + Vf +"mm/min";
+				VFTabla.innerHTML = Vf +" mm/min";
+				FTabla.innerHTML = ft + " mm";
+				RPMTabla.innerHTML = nt + " min<sup>-1</sup>";
+				
+				VF123.innerHTML= "V<sub>f</sub>: " + Vf +" mm/min";
 									
 }
 
@@ -382,9 +424,13 @@ function CalcularTalQ()
 	
 					var Q = (vf * 3.14 * (Dc*Dc))/4000;
 					Q = Number(Q.toFixed(2));//muestra 2 decimales
-					Q1.innerHTML = "Q: " + Q +"cm<sup>3</sup>/min";
+					Q1.innerHTML = "Q: " + Q +" cm<sup>3</sup>/min";
 				}
-				Q123.innerHTML= "Q: " + Q +"cm<sup>3</sup>/min";
+				VFTabla.innerHTML = vf + " mm/min";
+				DCTabla.innerHTML = Dc + " mm";
+				QTabla.innerHTML = Q +" cm<sup>3</sup>/min";
+				
+				Q123.innerHTML= "Q: " + Q +" cm<sup>3</sup>/min";
 									
 }
 
@@ -428,9 +474,16 @@ function CalcularTornoQ1()
 						Q = Q * (1-(ap/Dc));
 					
 					Q = Number(Q.toFixed(3));//muestra 3 decimales
-					Qt1.innerHTML = "Q: " + Q +"cm<sup>3</sup>/min";
+					Qt1.innerHTML = "Q: " + Q +" cm<sup>3</sup>/min";
 				}
-				Qt123.innerHTML= "Q: " + Q +"cm<sup>3</sup>/min";
+				QTabla.innerHTML  = Q  + " cm<sup>3</sup>/min";
+				VCTabla.innerHTML = vc + " m/min";
+				APTabla.innerHTML = ap + " mm";
+				FTabla.innerHTML  = f  + " mm";
+				DCTabla.innerHTML = Dc + " mm";
+				
+				
+				Qt123.innerHTML= "Q: " + Q +" cm<sup>3</sup>/min";
 									
 }
 
@@ -449,9 +502,13 @@ function CalcularTorA()
 	
 					var A = ft * apt;
 					A = Number(A.toFixed(3));//muestra 3 decimales
-					A1.innerHTML = "A: " + A +"mm<sup>2</sup>";
+					A1.innerHTML = "A: " + A +" mm<sup>2</sup>";
 				}
-				A12.innerHTML= "A: " + A +"mm<sup>2</sup>";
+				ATabla.innerHTML  = A   + " mm<sup>2</sup>";
+				FTabla.innerHTML  = ft  + " mm";
+				APTabla.innerHTML = apt + " mm";
+				
+				A12.innerHTML= "A: " + A +" mm<sup>2</sup>";
 									
 }
 
@@ -471,9 +528,13 @@ function CalcularTorB()
 	
 					var b = ap/(Math.sin(k));
 					b = Number(b.toFixed(3));//muestra 3 decimales
-					B1.innerHTML = "b: " + b +"mm";
+					B1.innerHTML = "b: " + b +" mm";
 				}
-				B12.innerHTML= "b: " + b +"mm";
+				BTabla.innerHTML  = b  + " mm";
+				APTabla.innerHTML = ap + " mm";
+				KTabla.innerHTML  = k  + "°";
+				
+				B12.innerHTML= "b: " + b +" mm";
 }
 	
 function CalcularTorH()
@@ -490,9 +551,14 @@ function CalcularTorH()
 	
 					var h = f/(Math.sin(k));
 					h = Number(h.toFixed(3));//muestra 3 decimales
-					H1.innerHTML = "h: " + h +"mm";
+					H1.innerHTML = "h: " + h + " mm";
 				}
-				H12.innerHTML= "h: " + h +"mm";
+				HTabla.innerHTML = h + " mm";
+				FTabla.innerHTML = f + " mm";
+				KTabla.innerHTML = k + "°";
+				
+				
+				H12.innerHTML= "h: " + h +" mm";
 }
 
 
@@ -514,9 +580,15 @@ function CalcularTorFc()
 	
 					var Fc = A*Kc*(Math.pow(h, mc));//Math.pow(base, exponente)
 					Fc = Number(Fc.toFixed(3));//muestra 3 decimales
-					FC1.innerHTML = "Fc: " + Fc +"N";
+					FC1.innerHTML = "Fc: " + Fc + " N";
 				}
-				FC12.innerHTML= "Fc: " + Fc +"N";
+				FCTabla.innerHTML = Fc + " N";
+				ATabla.innerHTML  = A  + " mm<sup>2</sup>";
+				KC11Tabla.innerHTML = Kc + " N/mm<sup>2</sup>";
+				HTabla.innerHTML  = h  + " mm";
+				mcTabla.innerHTML = mc;
+				
+				FC12.innerHTML= "Fc: " + Fc +" N";
 }
 
 function CalcularTorPmot()
@@ -539,6 +611,7 @@ function CalcularTorPmot()
 					Pmot1.innerHTML = "P<sub>mot</sub>: " + Pmot +" KW";
 				}
 				Pmot12.innerHTML= "P<sub>mot</sub>: " + Pmot +" KW";
+				
 				PmotTabla.innerHTML= Pmot +" KW";
 				QTabla.innerHTML= valor + " cm<sup>3</sup>/min";
 				KC11Tabla.innerHTML= valor1 + " N/mm<sup>2</sup>";
@@ -562,9 +635,14 @@ function CalcularTorTH()
 	
 					var th = (lm)/(f*n)
 					th = Number(th.toFixed(3));//muestra 3 decimales
-					TH1.innerHTML = "t<sub>h</sub>: " + th +"min";
+					TH1.innerHTML = "t<sub>h</sub>: " + th +" min";
 				}
-				TH12.innerHTML= "t<sub>h</sub>: " + th +"min";
+				THTabla.innerHTML  = th + " min";
+				LMTabla.innerHTML  = lm + " mm";
+				FTabla.innerHTML   = f  + " mm";
+				RPMTabla.innerHTML = n  + " min<sup>-1</sup>"; 
+				
+				TH12.innerHTML= "t<sub>h</sub>: " + th + " min";
 }
 
 function CalcularTorRMAX()
@@ -582,9 +660,14 @@ function CalcularTorRMAX()
 	
 					var Rmax = ((f*f)/(8*r))*1000
 					Rmax = Number(Rmax.toFixed(3));//muestra 3 decimales
-					RMAX1.innerHTML = "R<sub>max</sub>: " + Rmax +"&mu;m";
+					RMAX1.innerHTML = "R<sub>max</sub>: " + Rmax + " &mu;m";
 				}
-				RMAX12.innerHTML= "R<sub>max</sub>: " + Rmax +"&mu;m";
+				RMAXTabla.innerHTML = Rmax + " &mu;m";
+				FTabla.innerHTML    = f    + " mm";
+				rTabla.innerHTML    = r    + " mm";
+				
+				
+				RMAX12.innerHTML= "R<sub>max</sub>: " + Rmax +" &mu;m";
 }
 
 function CalcularTorLC()
@@ -605,9 +688,15 @@ function CalcularTorLC()
 					var lc = ((Dc*3.14))/1000
 						lc = lc *(lm/f)
 					lc = Number(lc.toFixed(3));//muestra 3 decimales
-					LC1.innerHTML = "l<sub>c</sub>: " + lc +"m";
+					LC1.innerHTML = "l<sub>c</sub>: " + lc + " m";
 				}
-				LC12.innerHTML= "l<sub>c</sub>: " + lc +"m";
+				LCTabla.innerHTML = lc + " m";
+				DCTabla.innerHTML = Dc + " mm";
+				LMTabla.innerHTML = lm + " mm";
+				FTabla.innerHTML  = f  + " mm";
+				
+				
+				LC12.innerHTML= "l<sub>c</sub>: " + lc + " m";
 }
 
 function CalcularTalMC()
@@ -628,9 +717,14 @@ function CalcularTalMC()
 					var Mc = ((Dc*Dc))* kc * f;
 						Mc = Mc / 8000;
 					Mc = Number(Mc.toFixed(3));//muestra 3 decimales
-					MC1.innerHTML = "M<sub>c</sub>: " + Mc +"Nm";
+					MC1.innerHTML = "M<sub>c</sub>: " + Mc +" Nm";
 				}
-				MC12.innerHTML= "M<sub>c</sub>: " + Mc +"Nm";
+				MCTabla.innerHTML = Mc +" Nm";
+				DCTabla.innerHTML = Dc + " mm";
+				KCTabla.innerHTML = kc + " N/mm<sup>2</sup>";
+				FTabla.innerHTML  = f + " mm";
+				
+				MC12.innerHTML= "M<sub>c</sub>: " + Mc +" Nm";
 }
 
 function CalcularTalFF()
@@ -651,9 +745,14 @@ function CalcularTalFF()
 					var Ff = (Dc* kc * f)/2;
 						Ff = Ff * 0.63;
 					Ff = Number(Ff.toFixed(3));//muestra 3 decimales
-					FF1.innerHTML = "F<sub>f</sub>: " + Ff +"N";
+					FF1.innerHTML = "F<sub>f</sub>: " + Ff +" N";
 				}
-				FF12.innerHTML= "F<sub>f</sub>: " + Ff +"N";
+				FFTabla.innerHTML = Ff + " N";
+				DCTabla.innerHTML = Dc + " mm";
+				KCTabla.innerHTML = kc + " N/mm<sup>2</sup>";
+				FTabla.innerHTML  = f  + " mm";
+				
+				FF12.innerHTML= "F<sub>f</sub>: " + Ff +" N";
 }
 
 function CalcularTalKC()
@@ -674,9 +773,15 @@ function CalcularTalKC()
 					var Kc = Kc1 / (Math.pow(h, mc));
 						
 					Kc = Number(Kc.toFixed(3));//muestra 3 decimales (Math.pow(h, mc))
-					KC1.innerHTML = "K<sub>c</sub>: " + Kc +"N/mm";
+					KC1.innerHTML = "K<sub>c</sub>: " + Kc +" N/mm<sup>2<sup>";
 				}
-				KC12.innerHTML= "K<sub>c</sub>: " + Kc +"N/mm<sup>2<sup>";
+				KCTabla.innerHTML   = Kc  + " N/mm<sup>2<sup>";
+				KC11Tabla.innerHTML = Kc1 + " N/mm<sup>2<sup>";
+				HTabla.innerHTML    = h   + " mm";
+				mcTabla.innerHTML   = mc;
+				
+				
+				KC12.innerHTML= "K<sub>c</sub>: " + Kc +" N/mm<sup>2<sup>";
 }
 
 function CalcularTalH()
@@ -693,9 +798,13 @@ function CalcularTalH()
 	
 					var h = fz/(Math.sin(k));
 					h = Number(h.toFixed(3));//muestra 3 decimales
-					H1.innerHTML = "h: " + h +"mm";
+					H1.innerHTML = "h: " + h +" mm";
 				}
-				H12.innerHTML= "h: " + h +"mm";
+				HTabla.innerHTML  = h  + " mm";
+				FZTabla.innerHTML = fz + " mm";
+				KTabla.innerHTML  = k  + "°";
+				
+				H12.innerHTML= "h: " + h +" mm";
 }
 
 function CalucularRoscadoMachRosP()
@@ -716,9 +825,15 @@ function CalucularRoscadoMachRosP()
 					var P = (Md * RPM)/(9500 * eta);
 						
 					P = Number(P.toFixed(3));//muestra 3 decimales (Math.pow(h, mc))
-					P1.innerHTML = "P: " + P +"KW";
+					P1.innerHTML = "P: " + P +" KW";
 				}
-				P12.innerHTML= "P: " + P +"KW";
+				POTTabla.innerHTML = P +" KW";
+				MDTabla.innerHTML = Md + " Nm";
+				RPMTabla.innerHTML = RPM + " min<sup>-1</sup>";
+				ETATabla.innerHTML = eta;
+				
+				
+				P12.innerHTML= "P: " + P +" KW";
 }
 
 
