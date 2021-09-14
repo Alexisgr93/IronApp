@@ -40,7 +40,7 @@ function datos(){
 				};
 
 
-			
+/* FUNCIONGPS EMPIEZA ACA parte 1°	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!		
  (function (){
 	var content = document.getElementById("geolocation-test");
 
@@ -59,7 +59,9 @@ function datos(){
 		}
 		/*Muestra la latitud en pantalla
 			content.innerHTML = "<p><strong>Latitud:</strong> " + lat + "</p><p><strong>Longitud:</strong> " + lon + "</p>";*/
-			
+
+
+	/* FUNCIONGPS EMPIEZA ACA parte 2°	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!	
 		var	rad = function(x) {return x*Math.PI/180;}
   var R = 6378.137; //Radio de la tierra en km 
   var dLat = rad( las - objPosition.coords.latitude );
@@ -111,7 +113,7 @@ function datos(){
 	}
 })();
 
-
+*/
 
 
 
