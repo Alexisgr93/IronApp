@@ -266,6 +266,29 @@ a{
 	text-decoration:none;
 }
 
+.cuerpo{
+	align-items: center;
+	text-align: center;
+}
+
+#ingresar{
+	background-color: #0F3;
+	font-size: larger;
+	border-radius: 12px;
+}
+
+
+#labelLogin{
+	font-family: monospace;
+	font-size: larger;
+}
+
+#labelAccount{
+	font-family: monospace;
+	font-size: 15px;
+	color: blue;
+}
+
 
 
 
