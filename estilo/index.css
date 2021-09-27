@@ -266,6 +266,35 @@ a{
 	text-decoration:none;
 }
 
+.cuerpo{
+	align-items: center;
+	text-align: center;
+}
+
+#ingresar, #siguiente, #login{
+	background-color: #0F3;
+	font-size: larger;
+	border-radius: 12px;
+}
+
+#volver{
+	background-color: red;
+	font-size: larger;
+	border-radius: 12px;
+}
+
+
+#labelLogin, p	{
+	font-family: monospace;
+	font-size: larger;
+}
+
+#labelAccount{
+	font-family: monospace;
+	font-size: 15px;
+	color: blue;
+}
+
 
 
 
