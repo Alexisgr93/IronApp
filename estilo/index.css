@@ -271,14 +271,20 @@ a{
 	text-align: center;
 }
 
-#ingresar{
+#ingresar, #siguiente, #login{
 	background-color: #0F3;
 	font-size: larger;
 	border-radius: 12px;
 }
 
+#volver{
+	background-color: red;
+	font-size: larger;
+	border-radius: 12px;
+}
 
-#labelLogin{
+
+#labelLogin, p	{
 	font-family: monospace;
 	font-size: larger;
 }
