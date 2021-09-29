@@ -8,15 +8,19 @@ function muestra_ocultaVC(id){
 
 	var a = document.getElementById("mas-menos-text2");
 	var b = document.getElementById("contenido-todo2");
+	
 
 
 	if(vc.style.display == "none"){
 		a.innerHTML = "+";
+		a = document.getElementsByClassName("mas-menos-Vc")[0].style.backgroundColor = "#366";
 		a = document.getElementById("mas-menos-text2").style.marginLeft="20%";
 		b = document.getElementById("contenido-todo2").style.height = "60px";
 	}
 	else{
 		a.innerHTML = "-";
+		b = document.getElementsByClassName("mas-menos-Vc")[0].style.backgroundColor = "#C00";
+		
 		a = document.getElementById("mas-menos-text2").style.marginLeft="27%";
 		b = document.getElementById("contenido-todo2").style.height = "140px";
 	}
@@ -40,11 +44,13 @@ function muestra_ocultaVF(id){
 
 	if(vf.style.display == "none"){
 		a.innerHTML = "+";
+		a = document.getElementsByClassName("mas-menos-Vf")[0].style.backgroundColor = "#366";
 		a = document.getElementById("mas-menos-text3").style.marginLeft="20%";
 		b = document.getElementById("contenido-todo3").style.height = "60px";
 	}
 	else{
 		a.innerHTML = "-";
+		a = document.getElementsByClassName("mas-menos-Vf")[0].style.backgroundColor = "#C00";
 		a = document.getElementById("mas-menos-text3").style.marginLeft="27%";
 		b = document.getElementById("contenido-todo3").style.height = "140px";
 	}
@@ -67,11 +73,13 @@ function muestra_ocultaFZ(id){
 
 	if(fz.style.display == "none"){
 		a.innerHTML = "+";
+		a = document.getElementsByClassName("mas-menos-Fz")[0].style.backgroundColor = "#366";
 		a = document.getElementById("mas-menos-text4").style.marginLeft="20%";
 		b = document.getElementById("contenido-todo4").style.height = "60px";
 	}
 	else{
 		a.innerHTML = "-";
+		a = document.getElementsByClassName("mas-menos-Fz")[0].style.backgroundColor = "#C00";
 		a = document.getElementById("mas-menos-text4").style.marginLeft="27%";
 		b = document.getElementById("contenido-todo4").style.height = "140px";
 	}
@@ -95,11 +103,13 @@ function muestra_ocultaQ(id){
 
 	if(q.style.display == "none"){
 		a.innerHTML = "+";
+		a = document.getElementsByClassName("mas-menos-Q")[0].style.backgroundColor = "#366";
 		a = document.getElementById("mas-menos-text5").style.marginLeft="20%";
 		b = document.getElementById("contenido-todo5").style.height = "60px";
 	}
 	else{
 		a.innerHTML = "-";
+		a = document.getElementsByClassName("mas-menos-Q")[0].style.backgroundColor = "#C00";
 		a = document.getElementById("mas-menos-text5").style.marginLeft="27%";
 		b = document.getElementById("contenido-todo5").style.height = "140px";
 	}
@@ -123,11 +133,13 @@ function muestra_ocultaRPM(id){
 
 	if(el.style.display == "none"){
 		a.innerHTML = "+";
+		a = document.getElementsByClassName("mas-menos")[0].style.backgroundColor = "#366";
 		a = document.getElementById("mas-menos-text").style.marginLeft="20%";
 		b = document.getElementById("contenido-todo").style.height = "60px";
 	}
 	else{
 		a.innerHTML = "-";
+		b = document.getElementsByClassName("mas-menos")[0].style.backgroundColor = "#C00";
 		a = document.getElementById("mas-menos-text").style.marginLeft="27%";
 		b = document.getElementById("contenido-todo").style.height = "140px";
 	}
@@ -149,11 +161,13 @@ function muestra_ocultaB(id){
 
 	if(el.style.display == "none"){
 		a.innerHTML = "+";
+		b = document.getElementsByClassName("mas-menos-B")[0].style.backgroundColor = "#366";
 		a = document.getElementById("mas-menos-text6").style.marginLeft="20%";
 		b = document.getElementById("contenido-todo6").style.height = "60px";
 	}
 	else{
 		a.innerHTML = "-";
+		b = document.getElementsByClassName("mas-menos-B")[0].style.backgroundColor = "#C00";
 		a = document.getElementById("mas-menos-text6").style.marginLeft="27%";
 		b = document.getElementById("contenido-todo6").style.height = "140px";
 	}
@@ -174,11 +188,13 @@ function muestra_ocultaH(id){
 
 	if(el.style.display == "none"){
 		a.innerHTML = "+";
+		b = document.getElementsByClassName("mas-menos-QsC")[0].style.backgroundColor = "#366";
 		a = document.getElementById("mas-menos-text7").style.marginLeft="20%";
 		b = document.getElementById("contenido-todo7").style.height = "60px";
 	}
 	else{
 		a.innerHTML = "-";
+		b = document.getElementsByClassName("mas-menos-QsC")[0].style.backgroundColor = "#C00";
 		a = document.getElementById("mas-menos-text7").style.marginLeft="27%";
 		b = document.getElementById("contenido-todo7").style.height = "140px";
 	}
@@ -200,11 +216,13 @@ function muestra_ocultaFc(id){
 
 	if(el.style.display == "none"){
 		a.innerHTML = "+";
+		b = document.getElementsByClassName("mas-menos-QsNC")[0].style.backgroundColor = "#366";
 		a = document.getElementById("mas-menos-text8").style.marginLeft="20%";
 		b = document.getElementById("contenido-todo8").style.height = "60px";
 	}
 	else{
 		a.innerHTML = "-";
+		b = document.getElementsByClassName("mas-menos-QsNC")[0].style.backgroundColor = "#C00";
 		a = document.getElementById("mas-menos-text8").style.marginLeft="27%";
 		b = document.getElementById("contenido-todo8").style.height = "140px";
 	}
@@ -225,11 +243,13 @@ function muestra_ocultaPmot(id){
 
 	if(el.style.display == "none"){
 		a.innerHTML = "+";
+		a = document.getElementsByClassName("mas-menos-hm")[0].style.backgroundColor = "#366";
 		a = document.getElementById("mas-menos-text9").style.marginLeft="20%";
 		b = document.getElementById("contenido-todo9").style.height = "60px";
 	}
 	else{
 		a.innerHTML = "-";
+		a = document.getElementsByClassName("mas-menos-hm")[0].style.backgroundColor = "#C00";
 		a = document.getElementById("mas-menos-text9").style.marginLeft="27%";
 		b = document.getElementById("contenido-todo9").style.height = "140px";
 	}
@@ -249,12 +269,14 @@ function muestra_ocultaTH(id){
 
 
 	if(el.style.display == "none"){
-		a.innerHTML = "+";
+		a.innerHTML = "+";	
+		a = document.getElementsByClassName("mas-menos-th")[0].style.backgroundColor = "#366";
 		a = document.getElementById("mas-menos-text11").style.marginLeft="20%";
 		b = document.getElementById("contenido-todo11").style.height = "60px";
 	}
 	else{
 		a.innerHTML = "-";
+		a = document.getElementsByClassName("mas-menos-th")[0].style.backgroundColor = "#C00";
 		a = document.getElementById("mas-menos-text11").style.marginLeft="27%";
 		b = document.getElementById("contenido-todo11").style.height = "140px";
 	}
@@ -275,11 +297,13 @@ function muestra_ocultaRMAX(id){
 
 	if(el.style.display == "none"){
 		a.innerHTML = "+";
+		a = document.getElementsByClassName("mas-menos-Rmax")[0].style.backgroundColor = "#366";
 		a = document.getElementById("mas-menos-text12").style.marginLeft="20%";
 		b = document.getElementById("contenido-todo12").style.height = "60px";
 	}
 	else{
 		a.innerHTML = "-";
+		a = document.getElementsByClassName("mas-menos-Rmax")[0].style.backgroundColor = "#C00";
 		a = document.getElementById("mas-menos-text12").style.marginLeft="27%";
 		b = document.getElementById("contenido-todo12").style.height = "140px";
 	}
@@ -299,12 +323,14 @@ function muestra_ocultaLC(id){
 
 
 	if(el.style.display == "none"){
-		a.innerHTML = "+";
+		a.innerHTML = "+"; 
+		a = document.getElementsByClassName("mas-menos-Lc")[0].style.backgroundColor = "#366";
 		a = document.getElementById("mas-menos-text13").style.marginLeft="20%";
 		b = document.getElementById("contenido-todo13").style.height = "60px";
 	}
 	else{
 		a.innerHTML = "-";
+		a = document.getElementsByClassName("mas-menos-Lc")[0].style.backgroundColor = "#C00";
 		a = document.getElementById("mas-menos-text13").style.marginLeft="27%";
 		b = document.getElementById("contenido-todo13").style.height = "140px";
 	}
