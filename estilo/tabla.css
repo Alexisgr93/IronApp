@@ -255,3 +255,21 @@ input{
     border-top: 1px solid #dd5;
     border-bottom: 1px solid #dd5;
   }
+
+.w3-animate-tableRes{/*REVISAR*/
+	position:absolute;
+	animation:animatetableRes 1.5s;
+	-webkit-transition:bottom 1.5s;
+	-moz-transition:bottom 1.5s;
+	-o-transition:bottom 1.5s;
+	-ms-transition:bottom 1.5s;
+}
+
+@keyframes animatetableRes{/*REVISAR*/
+	from{
+	bottom:-100%;
+	opacity:0
+	} 
+	to{bottom:10%;
+	opacity:1}
+}
