@@ -18,19 +18,22 @@ function guardarApellido() {
 
     localStorage.setItem("apellido", apellido.value.JSON.stringify);
 
+    window.alert("El apellido se guardo");
+
     console.log("El apellido se guardo");}
     catch (e) {
         console.log(e);
     }
 }
 
-function guardarDNI() {
+function guardarMail(){
     try {
-    let dni = document.getElementById("DNI");
+    let mail = document.getElementById("mail");
 
-    localStorage.setItem("DNI", dni.value);
-    console.log("El DNI se guardo");
-    } catch (e) {
+    localStorage.setItem("mail", mail.value);
+    console.log("El mail se guardo");
+    }
+    catch (e) {
         console.log(e);
     }
 }
@@ -100,7 +103,7 @@ function createUser() {
     localStorage.setItem("user", JSON.stringify(user));
 
 
-    //persistUser();
+
 
     window.location.href = "login.html";
     } catch (e) {
