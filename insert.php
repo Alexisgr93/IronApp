@@ -143,7 +143,7 @@ session_abort();
 
         <a href="index.html">
             <div>
-                <input type="submit" id="login" value="Login" onclick="createUser()">
+                <input type="submit" id="login" value="Login" >
             </div>
         </a>
             
