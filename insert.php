@@ -1,3 +1,45 @@
+<?php
+
+session_start();
+
+
+
+
+
+
+$conexion = mysqli_connect("bhwxogflcwhuadpy4ooh-mysql.services.clever-cloud.com", 
+"udhxiuzvhzehplm6", 
+"royV0d43SkwT1IgSX7zo", 
+"bhwxogflcwhuadpy4ooh");
+
+$nombre = $_POST['nombre'];
+$apellido = $_POST['apellido'];
+$username = $_POST['username'];
+$password = $_POST['password'];
+$mail = $_POST['mail'];
+
+
+
+
+$insertar = "INSERT INTO users (NOMBRE, APELLIDO, USERNAME, MAIL, PASS) 
+VALUES ('$nombre', '$apellido', '$username', '$mail', '$password')";
+
+$resultado = mysqli_query($conexion, $insertar);
+
+if($resultado){
+
+    $_SESSION['message'] = 'Persona guardada de forma correcta';
+    echo "<script>alert('Usuario registrado con exito');
+            
+          </script>";
+}else{
+    echo "<script>alert('Error al registrar usuario');</script>";
+}
+
+session_abort();
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -101,7 +143,7 @@
 
         <a href="index.html">
             <div>
-                <input type="submit" id="login" value="Login" onclick="createUser()">
+                <input type="submit" id="login" value="Login" >
             </div>
         </a>
             
@@ -118,3 +160,4 @@
    </footer>
 </body>
 </html>
+
