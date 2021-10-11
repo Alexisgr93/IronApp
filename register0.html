@@ -94,29 +94,22 @@
 	<div class="backgroung">
     	
         <div class="cuerpo">
-
-        <br>
-        <p>Ingrese su nombre</p>
-        <br>
-        <div id="texto">
-            <input type="text" id="nombre" placeholder="Nombre">
-        </div>
-        <br>
-        <a href="register-1.html">
-            <div>         
-            <input type="submit" name="siguiente" id="siguiente" value="siguiente" onclick="guardarNombre()">       
-            </div>
-        </a>       
-            
-            <a href="index.html">
-                <div>
-                    <input type="submit" name="volver" id="volver" value="volver">
-                </div>
-            </a>
-
         
-
-        
+        <form class="formulario" action="insert.php" method="post">
+        <br>
+        <p>Ingrese sus datos</p>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <br>
+        <input type="text" name="apellido" placeholder="Apellido" required>
+        <br>
+        <input type="text" name="username" placeholder="Nombre de usuario" required>
+        <br>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <br>
+        <input type="mail" name="mail" placeholder="Correo" required>
+        <br>
+        <input type="submit" value="Enviar">
+        </form>            
     </div>
 </section>
 </body>
